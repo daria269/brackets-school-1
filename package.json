@@ -1,0 +1,14 @@
+{
+  "name": "brackets-school-template",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Учебный проект на буткепме OneBootcamp",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "cowsay": "^1.4.0"
+  }
+}
