@@ -1,6 +1,6 @@
 .header {
     padding: 20px;
-    border-bottom: 1px solid #C4C4C4;
+    border-bottom: 1px solid #c4c4c4;
 }
 
 .nav {
@@ -16,7 +16,7 @@
 }
 
 .nav__item-link:link {
-    color: #2D9CDB;
+    color: #2d9cdb;
     font-size: 18px;
 }
 
@@ -32,7 +32,6 @@
 .privat__title {
     margin-bottom: 20px;
 }
-
 
 /* Не удается реализовать изменение цвета на провал валидации */
 .form__input {
