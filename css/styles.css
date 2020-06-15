@@ -19,3 +19,67 @@
     color: #2D9CDB;
     font-size: 18px;
 }
+
+.registration__container {
+    padding: 0 20px;
+    padding-top: 50px;
+}
+
+.registration__title {
+    margin-bottom: 20px;
+}
+
+.privat__title {
+    margin-bottom: 20px;
+}
+
+
+/* Не удается реализовать изменение цвета на провал валидации */
+.form__input {
+    width: 320px;
+    height: 40px;
+    padding-left: 10px;
+    display: block;
+    background: #f2f2f2;
+    border: 1px solid #e0e0e0;
+    font-size: 18px;
+    color: #000000;
+}
+
+.from__input::placeholder {
+    color: #bdbdbd;
+}
+
+.form__label-text {
+    display: block;
+    margin-bottom: 10px;
+    line-height: 16px;
+}
+
+.form__label {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.form__label:nth-child(:last-child) {
+    margin-bottom: 20px;
+}
+
+.privat__btn {
+    background: #27ae60;
+    border: 1px solid #e0e0e0;
+    font-size: 18px;
+    color: #f2f2f2;
+    line-height: 21px;
+    padding: 10px 30px 9px 30px;
+}
+
+.privat__checkbox-label {
+    display: flex;
+    align-items: center;
+    line-height: 16px;
+}
+
+.privat__checkbox {
+    margin-right: 5px;
+}

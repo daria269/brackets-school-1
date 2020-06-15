@@ -19,10 +19,42 @@ body {
     margin: 0;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
 .link:hover {
-    color: #56CCF2;
+    color: #56ccf2;
+}
+
+.title {
+    font-family: "Roboto-bold";
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.form__label {
+    font-family: "Roboto-medium";
+    font-size: 14px;
+    color: #000000;
+}
+
+.registration__title-h4 {
+    font-family: "Roboto-bold";
+    font-size: 18px;
+    color: #333333;
+    line-height: 21px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
 }
