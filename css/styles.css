@@ -19,3 +19,20 @@
     color: #2D9CDB;
     font-size: 18px;
 }
+
+.footer {
+    display: grid;
+    padding: 20px 0 20px 20px;
+    grid-template-columns: auto auto;
+    align-items: center;
+    border-top: 1px solid #C4C4C4;
+}
+
+.footer__logo {
+    justify-self: end;
+}
+
+.footer__text {
+    color: #BDBDBD;
+    margin: 0;
+}
