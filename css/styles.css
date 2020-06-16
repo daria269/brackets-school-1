@@ -25,7 +25,9 @@
 }
 
 .projects__title {
-    margin-left: 20px;
+    margin: 0 0 10px 20px;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .card {
@@ -39,6 +41,7 @@
     padding-left: 8px;
     margin-bottom: 14px;
     position: relative;
+    z-index: 1;
 }
 
 .telescope-header {
@@ -61,16 +64,23 @@
     background: radial-gradient(112.82% 206.84% at 50% 100%, #4F4F4F 0%, #F2994A 100%);
 }
 
-.card::before {
-    content: url("../img/bracket.svg");
+.card__bracket {
     position: absolute;
     right: 32px;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.microphone-card::before {
+.microphone-card {
     fill: #953232;
+}
+
+.joker-card {
+    fill: #42B773;
+}
+
+.telescope-card {
+    fill: #9A704C;
 }
 
 .card__title {
@@ -87,4 +97,5 @@
     line-height: 16px;
     color: #F2F2F2;
     padding-left: 20px;
+    z-index: 1;
 }
