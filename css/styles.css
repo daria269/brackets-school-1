@@ -1,6 +1,6 @@
 .header {
     padding: 20px;
-    border-bottom: 1px solid #C4C4C4;
+    border-bottom: 1px solid #c4c4c4;
 }
 
 .nav {
@@ -16,6 +16,55 @@
 }
 
 .nav__item-link:link {
-    color: #2D9CDB;
     font-size: 18px;
+}
+
+.reg-companies {
+    padding: 30px 64px 0 20px;
+}
+
+.reg-companies__title {
+    font-family: "Roboto-bold";
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* После подключения правильных шрифтов, будет вывглядить как на макетк */
+.reg-companies__desc {
+    margin: 0 0 10px 0;
+}
+
+.reg-companies__list-heading {
+    margin: 0 0 10px 0;
+}
+
+.reg-companies__content {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.reg-companies__list {
+    margin: 0;
+    padding: 0 0 0 15px;
+    list-style: none;
+    display: grid;
+    row-gap: 10px;
+}
+
+.reg-companies__item {
+    position: relative;
+}
+
+.reg-companies__item::before {
+    content: "";
+    position: absolute;
+    top: 50%;   
+    left: -15px;
+    width: 9px;
+    top: 8px;
+    height: 1px;
+    background: #000000;
 }
