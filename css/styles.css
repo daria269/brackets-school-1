@@ -1,21 +1,75 @@
 .header {
-    padding: 20px;
-    border-bottom: 1px solid #C4C4C4;
+  padding: 20px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .nav {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .nav__list {
-    display: grid;
-    row-gap: 20px;
-    list-style: none;
-    padding: 0 0 0 60px;
-    margin: 0;
+  display: grid;
+  row-gap: 20px;
+  list-style: none;
+  padding: 0 0 0 60px;
+  margin: 0;
 }
 
 .nav__item-link:link {
-    color: #2D9CDB;
-    font-size: 18px;
+  color: #2d9cdb;
+  font-size: 18px;
+}
+
+.feedback {
+  padding-top: 50px;
+}
+
+.feedback__title {
+  font-family: "Roboto-bold";
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+  margin: 0 0 10px 18px;
+}
+
+/* нормальный шрифт в другом пулреквесте, потом склеим  */
+.feedback__card {
+  font-family: "Roboto-medium";
+  font-size: 14px;
+  line-height: 16px;
+  color: #f2f2f2;
+  margin: 0;
+  background: radial-gradient(50% 50% at 50% 50%, #56ccf2 0%, #2d9cdb 100%);
+  width: 100%;
+  padding: 30px 60px 20px 60px;
+}
+
+.feedback__blockquote {
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.feedback__blockquote::before {
+  content: "";
+  background: url("../img/bracket.svg") repeat;
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  top: -10px;
+  left: -40px;
+  transform: rotate(180deg);
+}
+
+.feedback__blockquote::after {
+  content: "";
+  background: url("../img/bracket.svg") repeat;
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  bottom: -4px;
+  right: -40px;
+}
+
+.feedback__author {
+  margin: 0;
 }
