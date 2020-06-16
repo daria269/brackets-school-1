@@ -19,3 +19,72 @@
     color: #2D9CDB;
     font-size: 18px;
 }
+
+.projects {
+    padding-top: 50px;
+}
+
+.projects__title {
+    margin-left: 20px;
+}
+
+.card {
+    width: 100%;
+    padding: 20px 20px 20px 0;
+    position: relative;
+}
+
+.card__header {
+    display: grid;
+    padding-left: 8px;
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.telescope-header {
+    padding-left: 18px;
+}
+
+.card__img {
+    grid-column: 1;
+}
+
+.microphone-card {
+    background: radial-gradient(68.33% 282.68% at 0% 100%, #711F1F 0%, #B74343 100%);
+}
+
+.joker-card {
+    background: radial-gradient(112.82% 100% at 46.94% 0%, #219653 0%, #27AE60 96.09%);
+}
+
+.telescope-card {
+    background: radial-gradient(112.82% 206.84% at 50% 100%, #4F4F4F 0%, #F2994A 100%);
+}
+
+.card::before {
+    content: url("../img/bracket.svg");
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.microphone-card::before {
+    fill: #953232;
+}
+
+.card__title {
+    grid-column: 2;
+    font-size: 30px;
+    line-height: 35px;
+    color: #F2F2F2;
+}
+
+.card__desc {
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F2F2F2;
+    padding-left: 20px;
+}
