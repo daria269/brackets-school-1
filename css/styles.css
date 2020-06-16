@@ -42,6 +42,8 @@
   background: radial-gradient(50% 50% at 50% 50%, #56ccf2 0%, #2d9cdb 100%);
   width: 100%;
   padding: 30px 60px 20px 60px;
+  position: relative;
+  margin-bottom: 38px;
 }
 
 .feedback__blockquote {
@@ -72,4 +74,37 @@
 
 .feedback__author {
   margin: 0;
+}
+
+.feedback__author-triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 31px 31px 0 0;
+  border-color: #2d9cdb transparent transparent transparent;
+  position: absolute;
+  top: -39px;
+  left: 34px;
+}
+
+.userpics__btn {
+  border: none;
+  background: transparent;
+  position: relative;
+}
+
+.avatar {
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+.avatar-active {
+  filter: none;
+}
+
+.userpics {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 46px);
+  padding-left: 37px;
 }
