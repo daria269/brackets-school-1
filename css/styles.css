@@ -34,6 +34,7 @@
     width: 100%;
     padding: 20px 20px 20px 0;
     position: relative;
+    min-height: 187px;
 }
 
 .card__header {
@@ -98,4 +99,36 @@
     color: #F2F2F2;
     padding-left: 20px;
     z-index: 1;
+}
+
+.projects__toggle {
+    width: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 17px;
+    padding-top: 10px;
+}
+
+.toggle__item {
+    border: 1px solid #4F4F4F;
+    width: 13px;
+    height: 13px;
+    background: none;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.toggle__item:hover {
+    border: 1px solid #56CCF2;
+}
+
+.toggle__item-active {
+    background: #56CCF2;
+}
+
+.toggle__item:focus {
+    border: 1px solid #56CCF2;
+    outline: none;
 }
