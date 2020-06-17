@@ -82,3 +82,29 @@
 .privat__checkbox {
     margin-right: 5px;
 }
+
+.registration__toggle {
+    display: grid;
+    column-gap: 10px;
+    grid-auto-flow: column;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.reg-toggle__btn {
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #2d9cdb;
+    font-family: "Roboto-bold";
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.reg-toggle__btn--active {
+    background: #2D9CDB;
+    color: #ffffff;
+    text-decoration-line: none;
+    padding: 10px;
+}
