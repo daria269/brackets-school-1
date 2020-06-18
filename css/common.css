@@ -1,20 +1,22 @@
 @font-face {
-    font-family: "Roboto-medium";
-    src: url("../fonts/Roboto-Medium.ttf");
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
-    font-family: "Roboto-bold";
+    font-family: "Roboto";
     src: url("../fonts/Roboto-Bold.ttf");
+    font-weight: 700;
 }
 
 @font-face {
-    font-family: "Roboto-mediumItalic";
-    src: url("../fonts/Roboto-MediumItalic.ttf");
+    font-family: "Roboto";
+    src: url("../fonts/Roboto.ttf");
+    font-style: italic;
 }
 
 body {
-    font-family: "Roboto-medium", sans-serif;
+    font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
 }
