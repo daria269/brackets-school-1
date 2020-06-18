@@ -20,33 +20,30 @@
     font-size: 18px;
 }
 
-.projects {
-    padding-top: 50px;
-}
-
 .projects__title {
     margin: 0 0 10px 20px;
-    font-size: 24px;
-    line-height: 28px;
+
 }
 
 .card {
-    width: 100%;
     padding: 20px 20px 20px 0;
     position: relative;
-    min-height: 187px;
+    overflow-y: hidden;
 }
 
 .card__header {
     display: grid;
-    padding-left: 8px;
+    column-gap: 2px;
+    justify-content: start;
+    align-items: center;
+    padding-left: 10px;
     margin-bottom: 14px;
     position: relative;
     z-index: 1;
 }
 
-.telescope-header {
-    padding-left: 18px;
+.header--about-pluto {
+    padding-left: 20px;
 }
 
 .card__img {
@@ -55,53 +52,43 @@
 
 .microphone-card {
     background: radial-gradient(68.33% 282.68% at 0% 100%, #711F1F 0%, #B74343 100%);
+    fill: #953232;
+
 }
 
 .joker-card {
     background: radial-gradient(112.82% 100% at 46.94% 0%, #219653 0%, #27AE60 96.09%);
+    fill: #42B773;
 }
 
 .telescope-card {
     background: radial-gradient(112.82% 206.84% at 50% 100%, #4F4F4F 0%, #F2994A 100%);
+    fill: #9A704C;
+
 }
 
 .card__bracket {
     position: absolute;
     right: 32px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.microphone-card {
-    fill: #953232;
-}
-
-.joker-card {
-    fill: #42B773;
-}
-
-.telescope-card {
-    fill: #9A704C;
+    top: calc(50% - 78px);
 }
 
 .card__title {
     grid-column: 2;
     font-size: 30px;
-    line-height: 35px;
+    line-height: 1.2;
     color: #F2F2F2;
 }
 
 .card__desc {
     position: relative;
     margin: 0;
-    font-size: 14px;
-    line-height: 16px;
     color: #F2F2F2;
     padding-left: 20px;
     z-index: 1;
 }
 
-.projects__toggle {
+.toggle {
     width: fit-content;
     margin: 0 auto;
     display: grid;
@@ -124,7 +111,7 @@
     border: 1px solid #56CCF2;
 }
 
-.toggle__item-active {
+.toggle__item--active {
     background: #56CCF2;
 }
 
