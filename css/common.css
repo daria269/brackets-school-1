@@ -1,76 +1,71 @@
 @font-face {
-  font-family: "Roboto-medium";
-  src: url("../fonts/Roboto-Medium.ttf");
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Roboto-bold";
-  src: url("../fonts/Roboto-Bold.ttf");
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-weight: 700;
 }
 
 @font-face {
-  font-family: "Roboto-mediumItalic";
-  src: url("../fonts/Roboto-MediumItalic.ttf");
+    font-family: "Roboto";
+    src: url("../fonts/Roboto.ttf");
+    font-style: italic;
 }
 
 body {
-  font-family: "Roboto-medium", sans-serif;
-  padding: 0;
-  margin: 0;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-*,
-::after,
-::before {
-  box-sizing: border-box;
+*, ::after, ::before {
+    box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
 }
 
 .link:hover {
-  color: #56ccf2;
+    color: #56ccf2;
 }
 
 .accordion {
-  display: grid;
-  row-gap: 20px;
-  list-style-type: none;
+    display: grid;
+    row-gap: 20px;
+    list-style-type: none;
 }
 
 .title {
-  font-family: "Roboto-bold";
-  font-size: 30px;
-  line-height: 35px;
-  color: #000;
+    font-family: "Roboto-bold";
+    font-size: 30px;
+    line-height: 35px;
+    color: #000;
 }
 
 .title-h4 {
-  font-family: "Roboto-bold";
-  font-size: 18px;
-  color: #333;
+    font-family: "Roboto-bold";
+    font-size: 18px;
+    color: #333;
 }
 
 .section__container {
-  padding: 0 20px;
+    padding: 0 20px;
 }
 
 .accordion__item-title {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  padding: 0;
-  text-decoration-line: underline;
-  color: #2d9cdb;
-  border: none;
-  background: none;
-  text-align: left;
-  margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0;
+    text-decoration-line: underline;
+    color: #2d9cdb;
+    border: none;
+    background: none;
+    text-align: left;
+    margin-bottom: 10px;
 }
