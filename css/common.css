@@ -17,6 +17,8 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 1.1;
     padding: 0;
     margin: 0;
 }
@@ -40,32 +42,24 @@ h1, h2, h3, h4, h5, h6 {
     list-style-type: none;
 }
 
-.title {
-    font-family: "Roboto-bold";
+h2 {
+    font-weight: 700;
     font-size: 30px;
-    line-height: 35px;
-    color: #000;
+    line-height: 1.2;
+    color: #000000;
 }
 
-.title-h4 {
-    font-family: "Roboto-bold";
+h4 {
+    font-weight: 700;
     font-size: 18px;
-    color: #333;
+    color: #333333;
 }
 
-.section__container {
-    padding: 0 20px;
+p {
+    margin: 0;
 }
 
-.accordion__item-title {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
+ul {
+    margin: 0;
     padding: 0;
-    text-decoration-line: underline;
-    color: #2d9cdb;
-    border: none;
-    background: none;
-    text-align: left;
-    margin-bottom: 10px;
 }
