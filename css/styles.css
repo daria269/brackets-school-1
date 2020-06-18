@@ -1,110 +1,106 @@
 .header {
-    padding: 20px;
-    border-bottom: 1px solid #c4c4c4;
+  padding: 20px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .nav {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .nav__list {
-    display: grid;
-    row-gap: 20px;
-    list-style: none;
-    padding: 0 0 0 60px;
-    margin: 0;
+  display: grid;
+  row-gap: 20px;
+  list-style: none;
+  padding: 0 0 0 60px;
+  margin: 0;
 }
 
 .nav__item-link:link {
-    color: #2d9cdb;
-    font-size: 18px;
+  color: #2d9cdb;
+  font-size: 18px;
 }
 
-.registration__container {
-    padding: 0 20px;
-    padding-top: 50px;
+.registration {
+  padding: 0 20px;
 }
 
 .registration__title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.privat__title {
-    margin-bottom: 20px;
+.private__title {
+  margin-bottom: 20px;
 }
 
-/* Не удается реализовать изменение цвета на провал валидации */
 .form__input {
-    width: 320px;
-    height: 40px;
-    padding-left: 10px;
-    display: block;
-    background: #f2f2f2;
-    border: 1px solid #e0e0e0;
-    font-size: 18px;
-    color: #000000;
+  width: 100%;
+
+  padding: 10px;
+  display: block;
+  background: #f2f2f2;
+  border: 1px solid #e0e0e0;
+  font-size: 18px;
+  color: #000000;
+}
+
+.form__input:invalid {
+  border: 1px solid #eb5757;
 }
 
 .from__input::placeholder {
-    color: #bdbdbd;
+  color: #bdbdbd;
 }
 
 .form__label-text {
-    display: block;
-    margin-bottom: 10px;
-    line-height: 16px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .form__label {
-    margin-bottom: 20px;
-    display: block;
+  display: block;
+  margin-bottom: 20px;
+  color: #000000
 }
 
-.form__label:nth-child(:last-child) {
-    margin-bottom: 20px;
+.private__btn {
+  background: #27ae60;
+  border: 1px solid #e0e0e0;
+  font-size: 18px;
+  color: #f2f2f2;
+  line-height: 1.2;
+  padding: 10px 30px;
 }
 
-.privat__btn {
-    background: #27ae60;
-    border: 1px solid #e0e0e0;
-    font-size: 18px;
-    color: #f2f2f2;
-    line-height: 21px;
-    padding: 10px 30px 9px 30px;
+.private__checkbox-label {
+  display: flex;
+  align-items: center;
 }
 
-.privat__checkbox-label {
-    display: flex;
-    align-items: center;
-    line-height: 16px;
-}
-
-.privat__checkbox {
-    margin-right: 5px;
+.checkbox--promocode {
+  margin-right: 5px;
 }
 
 .registration__toggle {
-    display: grid;
-    column-gap: 10px;
-    grid-auto-flow: column;
-    justify-content: start;
-    margin-bottom: 20px;
+  display: grid;
+  column-gap: 10px;
+  grid-auto-flow: column;
+  justify-content: start;
+  margin-bottom: 20px;
 }
 
 .reg-toggle__btn {
-    font-size: 18px;
-    line-height: 21px;
-    text-decoration-line: underline;
-    color: #2d9cdb;
-    font-family: "Roboto-bold";
-    background: none;
-    border: none;
-    padding: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  text-decoration-line: underline;
+  color: #2d9cdb;
+  font-weight: 700;
+  background: none;
+  border: none;
+  padding: 10px;
 }
 
 .reg-toggle__btn--active {
-    background: #2D9CDB;
-    color: #ffffff;
-    text-decoration-line: none;
-    padding: 10px;
+  background: #2d9cdb;
+  color: #ffffff;
+  text-decoration-line: none;
 }
