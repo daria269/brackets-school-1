@@ -20,24 +20,10 @@
   font-size: 18px;
 }
 
-.feedback {
-  padding-top: 50px;
-}
-
-.feedback__title {
-  margin: 0 0 10px 20px;
-}
-
-/* нормальный шрифт в другом пулреквесте, потом склеим  */
 .feedback__card {
-  font-size: 14px;
-  line-height: 16px;
-  color: #f2f2f2;
-  margin: 0;
-  background: radial-gradient(50% 50% at 50% 50%, #56ccf2 0%, #2d9cdb 100%);
-  padding: 30px 60px 20px 60px;
-  position: relative;
-  margin-bottom: 40px;
+    color: #f2f2f2;
+    background: radial-gradient(50% 50% at 50% 50%, #56ccf2 0%, #2d9cdb 100%);
+    padding: 30px 60px 20px 60px;
 }
 
 .feedback__blockquote {
@@ -64,41 +50,4 @@
   position: absolute;
   bottom: -4px;
   right: -40px;
-}
-
-.feedback__author {
-  display: block;
-}
-
-.users-switch__triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 30px 30px 0 0;
-  border-color: #2d9cdb transparent transparent transparent;
-  position: absolute;
-  top: -40px;
-  left: 75px;
-}
-
-.users-switch__btn {
-  border: none;
-  background: transparent;
-}
-
-.avatar {
-  border-radius: 50%;
-  filter: blur(2px);
-}
-
-.avatar-active {
-  filter: none;
-}
-
-.users-switch {
-  display: grid;
-  column-gap: 20px;
-  grid-template-columns: repeat(3, 46px);
-  padding-left: 37px;
-  position: relative;
 }
