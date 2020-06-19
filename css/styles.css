@@ -20,12 +20,7 @@
 }
 
 .program {
-  color: #000000;
   padding: 0 20px;
-}
-
-.program-list--small li {
-  position: relative;
 }
 
 .program-list--small {
@@ -44,10 +39,6 @@
   content: "—";
   position: absolute;
   left: -15px;
-}
-
-.introduction__text {
-  margin-bottom: 15px;
 }
 
 .program-list {
