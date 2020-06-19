@@ -21,15 +21,11 @@
 }
 
 .footer {
-  display: grid;
-  padding: 20px 0 20px 20px;
-  grid-template-columns: auto auto;
+  display: flex;
+  padding: 20px;
   align-items: center;
+  justify-content: space-between;
   border-top: 1px solid #C4C4C4;
-}
-
-.footer__logo {
-  justify-self: end;
 }
 
 .footer__text {
