@@ -23,6 +23,19 @@ body {
     box-sizing: border-box;
 }
 
-.link:hover {
+a:link:hover {
     color: #56CCF2;
+}
+
+a:link {
+    color: #2D9CDB;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    padding: 0;
 }
