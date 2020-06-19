@@ -29,10 +29,9 @@
             <button class="reg-toggle__btn">От компании</button>
         </div>
         <section class="private">
-            <h4 class="private__title">Частное лицо</h4>
             <form action="" method="POST" class="form">
-                <label class="private__checkbox-label form__label">
-                    <input type="checkbox" class="checkbox--promocode">У меня есть промокод
+                <label class="private__checkbox-label form__label promocode-label">
+                    <input type="checkbox" class="promocode-label__checkbox">У меня есть промокод
                 </label>
                 <fieldset class="form__label">
                     <label for="promocode" class="form__label-text">Вот он:</label>
@@ -42,13 +41,13 @@
                     <span class="form__label-text">
                         Номер моей карты:
                     </span>
-                    <input required class="form__input" type="text" maxlength="16">
+                    <input required class="form__input" type="text" maxlength="18">
                 </fieldset>
                 <fieldset class="form__label">
                     <span class="form__label-text">Мой номер телефона:</span>
                     <input placeholder="+79015551274" required class="form__input" type="tel">
                 </fieldset>
-                <button class="private__btn">Оплатить</button>
+                <button class="submit-btn">Оплатить</button>
             </form>
         </section>
     </section>
