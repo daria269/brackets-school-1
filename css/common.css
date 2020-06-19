@@ -27,14 +27,17 @@ fieldset {
     border: none;
 }
 
-*,
-::after,
-::before {
+*, ::after, ::before {
     box-sizing: border-box;
 }
 
-.link:hover {
+a:link:hover {
     color: #56ccf2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
@@ -52,12 +55,18 @@ h4 {
     line-height: 21px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    padding: 0;
+input:invalid {
+    border: 1px solid #eb5757;
+}
+
+button {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.submit-btn {
+    background: #27ae60;
+    border: 1px solid #e0e0e0;
+    color: #f2f2f2;
+    padding: 10px 30px;
 }
