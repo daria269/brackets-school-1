@@ -71,7 +71,10 @@
     position: absolute;
     right: 32px;
     top: calc(50% - 78px);
+    width: 40px;
+    height: 156px;
 }
+
 
 .card__title {
     grid-column: 2;
@@ -117,5 +120,4 @@
 
 .toggle__item:focus {
     border: 1px solid #56CCF2;
-    outline: none;
 }
