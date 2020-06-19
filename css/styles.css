@@ -61,28 +61,3 @@
 .promocode-label__checkbox {
   margin-right: 5px;
 }
-
-.registration__toggle {
-  display: grid;
-  column-gap: 10px;
-  grid-auto-flow: column;
-  justify-content: start;
-  margin-bottom: 20px;
-}
-
-.reg-toggle__btn {
-  font-size: 18px;
-  line-height: 1.2;
-  text-decoration-line: underline;
-  color: #2d9cdb;
-  font-weight: 700;
-  background: none;
-  border: none;
-  padding: 10px;
-}
-
-.reg-toggle__btn--active {
-  background: #2d9cdb;
-  color: #ffffff;
-  text-decoration-line: none;
-}
