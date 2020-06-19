@@ -32,14 +32,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
-.link:hover {
+a:link:hover {
     color: #56ccf2;
 }
 
-.accordion {
-    display: grid;
-    row-gap: 20px;
-    list-style-type: none;
+a:link {
+  color: #2D9CDB;
 }
 
 h2 {

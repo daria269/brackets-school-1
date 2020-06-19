@@ -29,18 +29,34 @@
   margin: 10px 0 20px;
 }
 
-.introduction {
+.program-list__wrapper {
   padding-top: 10px;
 }
 
-.introduction__period {
+.program__period {
   margin-bottom: 10px;
 }
 
-.introduction__list {
+.program-list--small li {
+  position: relative;
+}
+
+.program-list--small {
   display: grid;
   row-gap: 4px;
   list-style-type: none;
+  padding-left: 16px;
+  margin-bottom: 15px;
+}
+
+.program-list--small:last-child {
+  margin-bottom: 0;
+}
+
+.program-list--small li::before {
+  content: "—";
+  position: absolute;
+  left: -15px;
 }
 
 .introduction__text {
@@ -54,7 +70,7 @@
 }
 
 .program__title-h4 {
-  margin: 15px 0 10px;
+  margin: 0 0 10px 0;
 }
 
 .program-list__item {
@@ -68,4 +84,8 @@
   background: none;
   text-align: left;
   margin-bottom: 10px;
+}
+
+.program__desc {
+  margin-bottom: 15px;
 }
