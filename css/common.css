@@ -25,15 +25,32 @@ body {
     box-sizing: border-box;
 }
 
-.link:link {
+a:link {
     color: #2d9cdb;
 }
 
-.link:hover {
+.a:hover {
     color: #56CCF2;
 }
 
 ul {
     margin: 0;
     padding: 0;
+}
+
+h2, h3, h4 {
+    margin: 0 0 10px 20px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
 }
