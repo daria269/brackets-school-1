@@ -76,3 +76,7 @@ h4 {
 fieldset {
     border: none;
 }
+
+dd {
+    margin: 0;
+}

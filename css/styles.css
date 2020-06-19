@@ -24,18 +24,6 @@
   padding: 0 20px;
 }
 
-.program__duration {
-  margin: 10px 0 20px;
-}
-
-.program-list__wrapper {
-  padding-top: 10px;
-}
-
-.program__period {
-  margin-bottom: 10px;
-}
-
 .program-list--small li {
   position: relative;
 }
@@ -68,24 +56,8 @@
   list-style: none;
 }
 
-.program__title-h4 {
-  margin: 0 0 10px 0;
-}
-
 .program-list__item {
   font-weight: bold;
   font-size: 24px;
   line-height: 1.2;
-  padding: 0;
-  text-decoration-line: underline;
-  color: #2d9cdb;
-  border: none;
-  background: none;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-.program__desc {
-  margin-bottom: 15px;
-    font-size: 18px;
 }
