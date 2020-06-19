@@ -16,7 +16,6 @@
 }
 
 .nav__item-link:link {
-  color: #2d9cdb;
   font-size: 18px;
 }
 
@@ -88,4 +87,5 @@
 
 .program__desc {
   margin-bottom: 15px;
+    font-size: 18px;
 }
