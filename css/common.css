@@ -53,6 +53,12 @@ li {
     position: relative;
 }
 
+li::before {
+    content: "—";
+    position: absolute;
+    left: -15px;
+}
+
 p {
     margin: 0 0 10px 0;   
 }
@@ -84,4 +90,10 @@ fieldset {
 
 dd {
  margin: 0;   
+}
+
+dl {
+    display: grid;
+    row-gap: 20px;
+    list-style: none;
 }
