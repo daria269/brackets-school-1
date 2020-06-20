@@ -23,31 +23,7 @@
   padding: 0 20px;
 }
 
-.program-list--small {
-  display: grid;
-  row-gap: 4px;
-  list-style-type: none;
-  padding-left: 16px;
-  margin-bottom: 15px;
-}
-
-.program-list--small:last-child {
-  margin-bottom: 0;
-}
-
-.program-list--small li::before {
-  content: "—";
-  position: absolute;
-  left: -15px;
-}
-
-.program-list {
-  display: grid;
-  row-gap: 20px;
-  list-style: none;
-}
-
-.program-list__item {
+.dt__link {
   font-weight: bold;
   font-size: 24px;
   line-height: 1.2;
