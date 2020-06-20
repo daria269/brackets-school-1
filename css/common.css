@@ -19,11 +19,13 @@ body {
     font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
+    font-size: 14px;
+    line-height: 1.1;
 }
 
 fieldset {
     padding: 0;
-    margin: 0;
+    margin: 0 0 20px;
     border: none;
 }
 
@@ -32,19 +34,61 @@ fieldset {
 }
 
 a:link:hover {
-    color: #56ccf2;
+    color: #56CCF2;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+a:link {
+    color: #2D9CDB;
+}
+
+button {
     padding: 0;
+    border: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    background: none;
+}
+
+ul, ol {
+    padding: 0 0 0 16px;
+    margin: 0 0 15px 0;
+    display: grid;
+    row-gap: 4px;
+    list-style: none;
+}
+
+ul:last-child, ol:last-child {
+    margin-bottom: 0;
+}
+
+li {
+    position: relative;
+}
+
+li::before {
+    content: "—";
+    position: absolute;
+    left: -15px;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+h2, h3, h4 {
+    margin: 0 0 10px 0;
+    color: #000000;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 h2 {
     font-size: 30px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #000000;
+}
+
+h3 {
+    font-size: 24px;
+    margin-left: 20px;
 }
 
 h4 {
@@ -52,7 +96,20 @@ h4 {
     font-weight: 700;
     line-height: 1.2;
     color: #333333;
-    line-height: 21px;
+}
+
+input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    background: #f2f2f2;
+    border: 1px solid #e0e0e0;
+    font-size: 18px;
+    color: #000000;
+}
+
+input::placeholder {
+    color: #bdbdbd;
 }
 
 input:invalid {
@@ -69,4 +126,18 @@ button {
     border: 1px solid #e0e0e0;
     color: #f2f2f2;
     padding: 10px 30px;
+}
+
+dd {
+    margin: 0;
+}
+
+dl {
+    display: grid;
+    row-gap: 20px;
+    list-style: none;
+}
+
+.italic {
+    font-style: italic;
 }
