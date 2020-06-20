@@ -19,11 +19,6 @@
     font-size: 18px;
 }
 
-.projects__title {
-    margin: 0 0 10px 20px;
-
-}
-
 .card {
     padding: 20px 20px 20px 0;
     position: relative;
@@ -32,6 +27,7 @@
 
 .card__header {
     display: grid;
+    grid-auto-flow: column;
     column-gap: 2px;
     justify-content: start;
     align-items: center;
@@ -49,21 +45,19 @@
     grid-column: 1;
 }
 
-.microphone-card {
+.card--microphone {
     background: radial-gradient(68.33% 282.68% at 0% 100%, #711F1F 0%, #B74343 100%);
     fill: #953232;
-
 }
 
-.joker-card {
+.card--joker {
     background: radial-gradient(112.82% 100% at 46.94% 0%, #219653 0%, #27AE60 96.09%);
     fill: #42B773;
 }
 
-.telescope-card {
+.card--telescope {
     background: radial-gradient(112.82% 206.84% at 50% 100%, #4F4F4F 0%, #F2994A 100%);
     fill: #9A704C;
-
 }
 
 .card__bracket {
@@ -74,11 +68,9 @@
     height: 156px;
 }
 
-
 .card__title {
-    grid-column: 2;
     font-size: 30px;
-    line-height: 1.2;
+    margin: 0;
     color: #F2F2F2;
 }
 
