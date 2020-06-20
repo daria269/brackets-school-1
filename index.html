@@ -34,14 +34,12 @@
                     <input id="promocode" class="form__input" type="text">
                 </fieldset>
                 <fieldset class="form__label">
-                    <span class="form__label-text">
-                        Номер моей карты:
-                    </span>
-                    <input required class="form__input" type="text" maxlength="18">
+                    <label class="form__label-text" for="card">Номер моей карты:</label>
+                    <input required class="form__input" type="text" id="card" maxlength="18">
                 </fieldset>
                 <fieldset class="form__label">
-                    <span class="form__label-text">Мой номер телефона:</span>
-                    <input placeholder="+79015551274" required class="form__input" type="tel">
+                    <label class="form__label-text" for="tel">Мой номер телефона:</label>
+                    <input placeholder="+79015551274" required class="form__input" type="tel" id="tel">
                 </fieldset>
                 <button class="submit-btn">Оплатить</button>
             </form>
