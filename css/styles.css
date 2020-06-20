@@ -9,16 +9,10 @@
 }
 
 .nav__list {
-    display: grid;
     row-gap: 20px;
-    list-style: none;
     padding: 20px 0 20px 60px;
     background: #ffffff;
     box-shadow: 0px 40px 50px #33759A;
-}
-
-.nav__item-link {
-    font-size: 18px;
 }
 
 .nav__btn {
@@ -27,8 +21,6 @@
     right: 23px;
     width: 24px;
     height: 24px;
-    border: none;
-    background: none;
 }
 
 .nav__btn[aria-expanded="false"] {
@@ -54,7 +46,10 @@
     fill: #56CCF2;
 }
 
-.header-nav-wrapper {
-    position: relative;
+.nav li::before {
+  display: none;
 }
 
+.nav a {
+  font-size: 18px;
+}
