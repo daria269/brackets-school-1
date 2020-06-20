@@ -98,7 +98,7 @@ fieldset {
 }
 
 dd {
- margin: 0;   
+    margin: 0;   
 }
 
 dl {
@@ -107,6 +107,8 @@ dl {
     list-style: none;
 }
 
-.italic {
-    font-style: italic;
+dt {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
 }
