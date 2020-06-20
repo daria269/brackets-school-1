@@ -49,6 +49,11 @@ ul, ol {
     row-gap: 4px;
 }
 
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+
 li {
     position: relative;
 }
@@ -96,4 +101,8 @@ dl {
     display: grid;
     row-gap: 20px;
     list-style: none;
+}
+
+.italic {
+    font-style: italic;
 }
