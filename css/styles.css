@@ -23,32 +23,8 @@
   padding: 0 20px;
 }
 
-.reg-companies__title {
-  color: #333333;
-  margin-left: 0;
-}
-
-.reg-companies__desc {
-  margin: 0 0 10px 0;
-}
-
-.reg-companies__list-heading {
-  margin: 0 0 10px 0;
-}
-
-.reg-companies__content {
-  color: #000000;
-}
-
 .reg-companies__list {
-  list-style: none;
-  display: grid;
   row-gap: 10px;
-  padding-left: 15px;
-}
-
-.reg-companies__item {
-  position: relative;
 }
 
 .reg-companies__item::before {
