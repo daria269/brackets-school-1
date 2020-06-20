@@ -40,6 +40,7 @@ button {
     border: 0;
     font-size: 18px;
     line-height: 1.2;
+    background: none;
 }
 
 ul, ol {
@@ -104,6 +105,8 @@ dl {
     list-style: none;
 }
 
-.italic {
-    font-style: italic;
+dt {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2;
 }
