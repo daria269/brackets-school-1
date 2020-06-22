@@ -23,6 +23,13 @@ body {
     line-height: 1.1;
 }
 
+@media(min-width: 1152px) {
+    body {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -43,12 +50,26 @@ button {
     background: none;
 }
 
+@media(min-width: 1152px) {
+    button {
+        font-size: 24px;
+    }
+}
+
 ul, ol {
     padding: 0 0 0 16px;
     margin: 0 0 15px 0;
     display: grid;
     row-gap: 4px;
     list-style: none;
+}
+
+@media(min-width: 1152px) {
+    ul, ol {
+        line-height: 1.2;
+        margin: 0;
+        padding-left: 25px;
+    }
 }
 
 ul:last-child,
@@ -66,8 +87,20 @@ li::before {
     left: -15px;
 }
 
+@media(min-width: 1152px) {
+    li::before {
+        left: -18px;
+    }
+}
+
 p {
     margin: 0 0 10px 0;   
+}
+
+@media(min-width: 1152px) {
+    p {
+        margin-bottom: 15px;   
+    }
 }
 
 h2, h3, h4 {
@@ -77,8 +110,20 @@ h2, h3, h4 {
     line-height: 1.2;
 }
 
+@media(min-width: 1152px) {
+    h2, h3, h4 {
+        margin: 0 0 20px 0;
+    }
+}
+
 h2 {
     font-size: 30px;
+}
+
+@media(min-width: 1152px) {
+    h2 {
+        font-size: 36px;
+    }
 }
 
 h3 {
@@ -86,8 +131,21 @@ h3 {
     margin-left: 20px;
 }
 
+@media(min-width: 1152px) {
+    h3 {
+        font-size: 36px;
+        margin-left: 60px;
+    }
+}
+
 h4 {
     font-size: 18px;
+}
+
+@media(min-width: 1152px) {
+    h4 {
+        font-size: 24px;
+    }
 }
 
 fieldset {
@@ -109,4 +167,10 @@ dt {
     font-weight: bold;
     font-size: 24px;
     line-height: 1.2;
+}
+
+@media(min-width: 1152px) {
+    dt {
+        font-size: 36px;
+    }
 }
