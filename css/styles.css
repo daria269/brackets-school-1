@@ -1,34 +1,30 @@
 .header {
-  padding: 20px;
-  border-bottom: 1px solid #c4c4c4;
+    padding: 20px;
+    border-bottom: 1px solid #c4c4c4;
 }
 
 .nav {
-  padding: 20px 0;
+    padding: 20px 0;
 }
 
 .nav__list {
-  display: grid;
-  row-gap: 20px;
-  list-style: none;
-  padding: 0 0 0 60px;
-  margin: 0;
+    display: grid;
+    row-gap: 20px;
+    list-style: none;
+    padding: 0 0 0 60px;
+    margin: 0;
 }
 
 .nav__item-link:link {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .reg-companies {
-  padding: 0 20px;
-}
-
-.reg-companies__list {
-  row-gap: 10px;
+    padding: 0 20px;
 }
 
 .reg-companies__item::before {
-  content: "—";
-  position: absolute;
-  left: -16px;
+    content: "—";
+    position: absolute;
+    left: -16px;
 }
