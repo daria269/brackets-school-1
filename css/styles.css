@@ -3,53 +3,15 @@
     border-bottom: 1px solid #C4C4C4;
 }
 
-.nav {
-    height: 100%;
-    background: linear-gradient(180deg, #56CCF2 0%, rgba(86, 204, 242, 0.5) 100%);
-}
-
 .nav__list {
     row-gap: 20px;
-    padding: 20px 0 20px 60px;
-    background: #ffffff;
-    box-shadow: 0px 40px 50px #33759A;
-}
-
-.nav__btn {
-    position: absolute;
-    top: 30px;
-    right: 23px;
-    width: 24px;
-    height: 24px;
-}
-
-.nav__btn[aria-expanded="false"] {
-    top: 35px;
-    right: 20px;
-    width: 30px;
-    height: 20px;
-}
-
-.nav__btn[aria-expanded="false"] .menu-btn__cross {
-    display: none;
-}
-
-.nav__btn[aria-expanded="true"] .menu-btn__burger {
-    display: none;
-}
-
-.menu-btn:focus .menu-btn__svg {
-    fill: #56CCF2;
-}
-
-.menu-btn:hover .menu-btn__svg {
-    fill: #56CCF2;
+    padding: 20px 20px 20px 60px;
 }
 
 .nav li::before {
-  display: none;
+    display: none;
 }
 
 .nav a {
-  font-size: 18px;
+    font-size: 18px;
 }
