@@ -1,23 +1,23 @@
 .header {
-  padding: 20px;
-  border-bottom: 1px solid #c4c4c4;
+    padding: 20px;
+    border-bottom: 1px solid #c4c4c4;
 }
 
 .nav {
-  padding: 20px 0;
+    padding: 20px 0;
 }
 
 .nav__list {
-  display: grid;
-  row-gap: 20px;
-  list-style: none;
-  padding: 0 0 0 60px;
-  margin: 0;
+    display: grid;
+    row-gap: 20px;
+    list-style: none;
+    padding: 0 0 0 60px;
+    margin: 0;
 }
 
 .nav__item-link:link {
-  color: #2d9cdb;
-  font-size: 18px;
+    color: #2d9cdb;
+    font-size: 18px;
 }
 
 .feedback__card {
@@ -27,27 +27,31 @@
 }
 
 .feedback__blockquote {
-  margin: 0 0 10px 0;
-  position: relative;
+    margin: 0 0 10px 0;
+    position: relative;
 }
 
 .feedback__blockquote::before {
-  content: "";
-  background: url("../img/bracket.svg") repeat;
-  width: 40px;
-  height: 35px;
-  position: absolute;
-  top: -10px;
-  left: -40px;
-  transform: rotate(180deg);
+    content: "";
+    background: url("../img/bracket.svg") repeat;
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    top: -10px;
+    left: -40px;
+    transform: rotate(180deg);
 }
 
 .feedback__blockquote::after {
-  content: "";
-  background: url("../img/bracket.svg") repeat;
-  width: 40px;
-  height: 35px;
-  position: absolute;
-  bottom: -4px;
-  right: -40px;
+    content: "";
+    background: url("../img/bracket.svg") repeat;
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    bottom: -4px;
+    right: -40px;
+}
+
+.feedback__author {
+    display: block;
 }
