@@ -3,59 +3,15 @@
     border-bottom: 1px solid #C4C4C4;
 }
 
-.nav {
-    padding: 20px 0;
-}
-
 .nav__list {
-    display: grid;
     row-gap: 20px;
-    list-style: none;
-    padding: 0 0 0 60px;
-    margin: 0;
+    padding: 20px 20px 20px 60px;
 }
 
-.nav__item-link:link {
-    color: #2D9CDB;
+.nav li::before {
+    display: none;
+}
+
+.nav a {
     font-size: 18px;
-}
-
-/* переключение svg будет с помощью aria-attr. */
-
-.nav__btn {
-    position: absolute;
-    padding: 0;
-    top: 30px;
-    right: 23px;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background: none;
-}
-
-.nav__btn[aria-expanded="false"] {
-    top: 35px;
-    right: 20px;
-    width: 30px;
-    height: 20px;
-}
-
-.nav__btn[aria-expanded="false"] .menu-btn__cross {
-    display: none;
-}
-
-.nav__btn[aria-expanded="true"] .menu-btn__burger {
-    display: none;
-}
-
-.nav__btn:focus {
-    outline: none;
-}
-
-.menu-btn:focus .menu-btn__svg {
-    fill: #56CCF2;
-}
-
-.menu-btn:hover .menu-btn__svg {
-    fill: #56CCF2;
 }
