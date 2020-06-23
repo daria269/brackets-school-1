@@ -22,9 +22,3 @@
 .reg-companies {
     padding: 0 20px;
 }
-
-.reg-companies__item::before {
-    content: "—";
-    position: absolute;
-    left: -16px;
-}
