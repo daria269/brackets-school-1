@@ -12,6 +12,10 @@
     padding: 20px 20px 20px 60px;
 }
 
+.nav li::before {
+    display: none;
+}
+
 .registration {
     padding: 0 20px;
 }
