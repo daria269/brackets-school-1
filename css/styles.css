@@ -52,6 +52,6 @@
     right: -40px;
 }
 
-.feedback-card__author {
+ .feedback-card > p > span {
     display: block;
 }
