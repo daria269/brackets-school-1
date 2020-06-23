@@ -4,16 +4,12 @@
 }
 
 .nav {
-    padding: 20px 0;
     font-size: 18px;
 }
 
 .nav__list {
-    display: grid;
     row-gap: 20px;
-    list-style: none;
-    padding: 0 0 0 60px;
-    margin: 0;
+    padding: 20px 20px 20px 60px;
 }
 
 .registration {
@@ -39,4 +35,8 @@
 .registration__title,
 .registration__title--small {
     margin-bottom: 20px;
+}
+
+.program {
+    padding: 0 20px;
 }
