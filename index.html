@@ -23,6 +23,30 @@
         </ul>
     </nav>
     <main>
+        <section class="registration">
+            <h2 class="registration__title">Записаться на курс</h2>
+                <section>
+                    <h4 class="registration__title--small">Частное лицо</h4>
+                    <form action="" method="POST" class="form">
+                        <label class="form__label-checkbox form__label">
+                            <input type="checkbox">У меня есть промокод
+                        </label>
+                        <fieldset>
+                            <label for="promocode" class="form__label-text">Вот он:</label>
+                            <input id="promocode" type="text">
+                        </fieldset>
+                        <fieldset>
+                            <label class="form__label-text" for="card">Номер моей карты:</label>
+                            <input required type="text" id="card" maxlength="18">
+                        </fieldset>
+                        <fieldset>
+                            <label class="form__label-text" for="tel">Мой номер телефона:</label>
+                            <input placeholder="+79015551274" required type="tel" id="tel">
+                        </fieldset>
+                        <button>Оплатить</button>
+                    </form>
+                </section>
+        </section>
         <section class="program">
             <h2>Программа курса</h2>
             <p>Длительность курса — 9 недель</p>
@@ -57,8 +81,8 @@
                     <a href="#traditional-programming">3. Традиционное программирование</a>
                 </dt>
             </dl>
-
         </section>
     </main>
 </body>
+
 </html>
