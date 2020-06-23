@@ -4,20 +4,118 @@
 }
 
 .nav {
-    padding: 20px 0;
+    font-size: 18px;
 }
 
 .nav__list {
-    display: grid;
     row-gap: 20px;
-    list-style: none;
-    padding: 0 0 0 60px;
-    margin: 0;
+    padding: 20px 20px 20px 60px;
 }
 
-.nav__item-link:link {
-    color: #2d9cdb;
-    font-size: 18px;
+.nav li::before {
+    display: none;
+}
+
+.registration {
+    padding: 0 20px;
+}
+
+.form__label-text {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 20px;
+    color: #000000
+}
+
+.form__label-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.registration__title,
+.registration__title--small {
+    margin-bottom: 20px;
+}
+
+.program {
+    padding: 0 20px;
+}
+
+.card {
+    padding: 20px;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.card--microphone {
+    background: radial-gradient(68.33% 282.68% at 0% 100%, #711F1F 0%, #B74343 100%);
+    fill: #953232;
+}
+
+.card--joker {
+    background: radial-gradient(112.82% 100% at 46.94% 0%, #219653 0%, #27AE60 96.09%);
+    fill: #42B773;
+}
+
+.card--telescope {
+    background: radial-gradient(112.82% 206.84% at 50% 100%, #4F4F4F 0%, #F2994A 100%);
+    fill: #9A704C;
+}
+
+.card__bracket {
+    position: absolute;
+    right: 32px;
+    top: calc(50% - 78px);
+    width: 40px;
+    height: 156px;
+}
+
+.card__title {
+    font-size: 30px;
+    color: #F2F2F2;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+    padding-left: 60px;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.card__title::before {
+    content: url('../img/microphone.png');
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    top: 0;
+    left: -12px;
+}
+
+.card--joker > h4::before {
+    content: url('../img/joker.png');
+}
+
+.card--telescope > h4::before {
+    content: url('../img/telescope.png');
+    height: 60px;
+    width: 60px;
+    left: -2px;
+    top: 5px;
+}
+
+.card__desc {
+    position: relative;
+    margin: 0;
+    color: #F2F2F2;
+    z-index: 1;
+}
+
+.reg-companies {
+    padding: 0 20px;
 }
 
 .feedback-card {
@@ -50,4 +148,17 @@
     position: absolute;
     bottom: -4px;
     right: -40px;
+}
+
+.footer {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #C4C4C4;
+}
+
+.footer__text {
+    color: #BDBDBD;
+    margin: 0;
 }
