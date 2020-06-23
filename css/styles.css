@@ -3,6 +3,10 @@
     border-bottom: 1px solid #C4C4C4;
 }
 
+.nav {
+    font-size: 18px;
+}
+
 .nav__list {
     row-gap: 20px;
     padding: 20px 20px 20px 60px;
@@ -12,6 +16,6 @@
     display: none;
 }
 
-.nav a {
-    font-size: 18px;
+.program {
+    padding: 0 20px;
 }
