@@ -17,10 +17,16 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    padding: 0;
-    margin: 0;
     font-size: 14px;
     line-height: 1.1;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0 0 20px;
+    border: none;
 }
 
 *, ::after, ::before {
@@ -36,11 +42,12 @@ a:link {
 }
 
 button {
-    padding: 0;
-    border: 0;
     font-size: 18px;
     line-height: 1.2;
-    background: none;
+    background: #27ae60;
+    border: 1px solid #e0e0e0;
+    color: #f2f2f2;
+    padding: 10px 30px;
 }
 
 ul, ol {
@@ -51,8 +58,7 @@ ul, ol {
     list-style: none;
 }
 
-ul:last-child,
-ol:last-child {
+ul:last-child, ol:last-child {
     margin-bottom: 0;
 }
 
@@ -67,7 +73,7 @@ li::before {
 }
 
 p {
-    margin: 0 0 10px 0;   
+    margin: 0 0 10px 0;
 }
 
 h2, h3, h4 {
@@ -88,15 +94,31 @@ h3 {
 
 h4 {
     font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #333333;
 }
 
-fieldset {
-    border: none;
-    margin-bottom: 20px;
+input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    background: #f2f2f2;
+    border: 1px solid #e0e0e0;
+    font-size: 18px;
+    color: #000000;
+}
+
+input::placeholder {
+    color: #bdbdbd;
+}
+
+input:invalid {
+    border: 1px solid #eb5757;
 }
 
 dd {
-    margin: 0;   
+    margin: 0;
 }
 
 dl {
@@ -109,4 +131,8 @@ dt {
     font-weight: bold;
     font-size: 24px;
     line-height: 1.2;
+}
+
+label>input[type="checkbox"] {
+    margin-right: 5px;
 }
