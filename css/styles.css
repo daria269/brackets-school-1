@@ -20,18 +20,18 @@
     font-size: 18px;
 }
 
-.feedback__card {
+.feedback-card {
     color: #f2f2f2;
     background: radial-gradient(50% 50% at 50% 50%, #56ccf2 0%, #2d9cdb 100%);
     padding: 30px 60px 20px 60px;
 }
 
-.feedback__blockquote {
+.feedback-card__blockquote {
     margin: 0 0 10px 0;
     position: relative;
 }
 
-.feedback__blockquote::before {
+.feedback-card__blockquote::before {
     content: "";
     background: url("../img/bracket.svg") repeat;
     width: 40px;
@@ -42,7 +42,7 @@
     transform: rotate(180deg);
 }
 
-.feedback__blockquote::after {
+.feedback-card__blockquote::after {
     content: "";
     background: url("../img/bracket.svg") repeat;
     width: 40px;
@@ -52,6 +52,6 @@
     right: -40px;
 }
 
-.feedback__author {
+.feedback-card__author {
     display: block;
 }
