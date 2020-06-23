@@ -1,20 +1,24 @@
 .header {
-    padding: 20px;
-    border-bottom: 1px solid #C4C4C4;
+  padding: 20px;
+  border-bottom: 1px solid #c4c4c4;
 }
 
 .nav {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .nav__list {
-    display: grid;
-    row-gap: 20px;
-    list-style: none;
-    padding: 0 0 0 60px;
-    margin: 0;
+  display: grid;
+  row-gap: 20px;
+  list-style: none;
+  padding: 0 0 0 60px;
+  margin: 0;
 }
 
 .nav__item-link:link {
-    font-size: 18px;
+  font-size: 18px;
+}
+
+.program {
+  padding: 0 20px;
 }
