@@ -117,3 +117,16 @@
 .reg-companies {
     padding: 0 20px;
 }
+
+.footer {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #C4C4C4;
+}
+
+.footer__text {
+    color: #BDBDBD;
+    margin: 0;
+}
