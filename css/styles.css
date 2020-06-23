@@ -5,6 +5,7 @@
 
 .nav {
     padding: 20px 0;
+    font-size: 18px;
 }
 
 .nav__list {
@@ -13,11 +14,6 @@
     list-style: none;
     padding: 0 0 0 60px;
     margin: 0;
-}
-
-.nav__item-link:link {
-    color: #2d9cdb;
-    font-size: 18px;
 }
 
 .registration {
@@ -35,15 +31,12 @@
     color: #000000
 }
 
-.private__checkbox-label {
+.form__label-checkbox {
     display: flex;
     align-items: center;
 }
 
-.promocode-label__checkbox {
-    margin-right: 5px;
-}
-
-.registration__title {
+.registration__title,
+.registration__title--small {
     margin-bottom: 20px;
 }

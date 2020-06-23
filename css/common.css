@@ -42,11 +42,12 @@ a:link {
 }
 
 button {
-    padding: 0;
-    border: 0;
     font-size: 18px;
     line-height: 1.2;
-    background: none;
+    background: #27ae60;
+    border: 1px solid #e0e0e0;
+    color: #f2f2f2;
+    padding: 10px 30px;
 }
 
 ul, ol {
@@ -116,18 +117,6 @@ input:invalid {
     border: 1px solid #eb5757;
 }
 
-button {
-    font-size: 18px;
-    line-height: 1.2;
-}
-
-.submit-btn {
-    background: #27ae60;
-    border: 1px solid #e0e0e0;
-    color: #f2f2f2;
-    padding: 10px 30px;
-}
-
 dd {
     margin: 0;
 }
@@ -142,4 +131,8 @@ dt {
     font-weight: bold;
     font-size: 24px;
     line-height: 1.2;
+}
+
+label>input[type="checkbox"] {
+    margin-right: 5px;
 }
