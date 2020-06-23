@@ -16,34 +16,95 @@
             </svg>
         </div>       
     <header class="header">
-        <img src="./img/logo.svg" class="header__logo" width="202" height="44"
-            alt="Логотип школы программирования на LISP Brackets">
+        <img src="./img/logo.svg" width="202" height="44" alt="Логотип школы программирования на LISP Brackets">
     </header>
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__item-link">Программа</a></li>
-            <li class="nav__item"><a href="#" class="nav__item-link">Учебные проекты</a></li>
-            <li class="nav__item"><a href="#" class="nav__item-link">Отзывы</a></li>
-            <li class="nav__item"><a href="#" class="nav__item-link">Записаться</a></li>
+            <li><a href="#">Программа</a></li>
+            <li><a href="#">Учебные проекты</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Записаться</a></li>
         </ul>
     </nav>
-    <section class="projects">
-        <h3>Учебные проекты</h3>
-        <article class="card card--microphone">
-            <h4 class="card__title">Новостной сайт «Бургундия»</h4>
-            <p class="card__desc">Небольшой новостной проект. В этом проекте вы поработаете с базами данных, сделаете роутинг, серверный рендеринг и напишете API для общения с клиентом</p>
-            <svg class="card__bracket"><use xlink:href="#bracket"/></svg>
-        </article>
-        <article class="card card--joker">
-            <h4 class="card__title">Техасский холдем онлайн</h4>
-            <p class="card__desc">Онлайн-казино, в котором играют в техасский холдем. Вы сделаете процессинг платежей, опишете поведение искуственного интеллекта, играющего в покер и мультиплеер</p>
-            <svg class="card__bracket"><use xlink:href="#bracket"/></svg>
-        </article>
-        <article class="card card--telescope">
-            <h4 class="card__title">Интерактивная карта Плутона</h4>
-            <p class="card__desc">Онлайн-карта. На фронте используется Google Maps, но вам предстоит сгенерировать картинки поверхности всей планеты и придумать как передавать их на клиент</p>
-            <svg class="card__bracket"><use xlink:href="#bracket"/></svg>
-        </article>
-    </section>
+    <main>
+        <section class="projects">
+            <h3>Учебные проекты</h3>
+            <article class="card card--microphone">
+                <h4 class="card__title">Новостной сайт «Бургундия»</h4>
+                <p class="card__desc">Небольшой новостной проект. В этом проекте вы поработаете с базами данных, сделаете роутинг, серверный рендеринг и напишете API для общения с клиентом</p>
+                <svg class="card__bracket"><use xlink:href="#bracket"/></svg>
+            </article>
+            <article class="card card--joker">
+                <h4 class="card__title">Техасский холдем онлайн</h4>
+                <p class="card__desc">Онлайн-казино, в котором играют в техасский холдем. Вы сделаете процессинг платежей, опишете поведение искуственного интеллекта, играющего в покер и мультиплеер</p>
+                <svg class="card__bracket"><use xlink:href="#bracket"/></svg>
+            </article>
+            <article class="card card--telescope">
+                <h4 class="card__title">Интерактивная карта Плутона</h4>
+                <p class="card__desc">Онлайн-карта. На фронте используется Google Maps, но вам предстоит сгенерировать картинки поверхности всей планеты и придумать как передавать их на клиент</p>
+                <svg class="card__bracket"><use xlink:href="#bracket"/></svg>
+            </article>
+        </section>
+        <section class="registration">
+            <h2 class="registration__title">Записаться на курс</h2>
+                <section>
+                    <h4 class="registration__title--small">Частное лицо</h4>
+                    <form action="" method="POST" class="form">
+                        <label class="form__label-checkbox form__label">
+                            <input type="checkbox">У меня есть промокод
+                        </label>
+                        <fieldset>
+                            <label for="promocode" class="form__label-text">Вот он:</label>
+                            <input id="promocode" type="text">
+                        </fieldset>
+                        <fieldset>
+                            <label class="form__label-text" for="card">Номер моей карты:</label>
+                            <input required type="text" id="card" maxlength="18">
+                        </fieldset>
+                        <fieldset>
+                            <label class="form__label-text" for="tel">Мой номер телефона:</label>
+                            <input placeholder="+79015551274" required type="tel" id="tel">
+                        </fieldset>
+                        <button>Оплатить</button>
+                    </form>
+                </section>
+        </section>
+        <section class="program">
+            <h2>Программа курса</h2>
+            <p>Длительность курса — 9 недель</p>
+            <dl>
+                <dt id="introduction"><a href="#introduction">1. Введение в LISP</a>
+                    <dd>
+                        <p><em>одна неделя</em></p>
+                        <p>В этом разделе мы знакомимся с языком LISP: изучаем основные операторы языка, учимся работать с переменными, объявлять функции, настраивать рабочее окружение и компилировать программы на LISP</p>
+                        <h4>Теория</h4>
+                        <ul>
+                            <li>Введение</li>
+                            <li>Компилятор</li>
+                            <li>Переменные</li>
+                            <li>Динамическая типизация</li>
+                            <li>Функции</li>
+                            <li>Рекурсия</li>
+                            <li>Рекурсия</li>
+                        </ul>
+                        <h4>Практика</h4>
+                        <ul>
+                            <li>Настройка рабочего окружения</li>
+                            <li>Установка компилятора</li>
+                            <li>Написание первой программы</li>
+                            <li>Отладка</li>
+                        </ul>
+                    </dd>
+                </dt>
+                <dt id="ideal-lisp">
+                    <a href="#ideal-lisp">2. Идеальный LISP</a>
+                </dt>
+                <dt id="traditional-programming">
+                    <a href="#traditional-programming">3. Традиционное программирование</a>
+                </dt>
+            </dl>
+        </section>
+    </main>
 </body>
+
 </html>
