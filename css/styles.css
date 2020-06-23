@@ -1,6 +1,6 @@
 .header {
     padding: 20px;
-    border-bottom: 1px solid #C4C4C4;
+    border-bottom: 1px solid #c4c4c4;
 }
 
 .nav {
@@ -14,6 +14,31 @@
 
 .nav li::before {
     display: none;
+}
+
+.registration {
+    padding: 0 20px;
+}
+
+.form__label-text {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 20px;
+    color: #000000
+}
+
+.form__label-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.registration__title,
+.registration__title--small {
+    margin-bottom: 20px;
 }
 
 .program {
