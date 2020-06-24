@@ -56,9 +56,15 @@
         display: inline-block;
         margin-right: 150px;
     }
-    
+
     .program__info:last-child {
         margin-right: 0;
+    }
+}
+
+@media(min-width: 1152px) {
+    .program-info__title {
+        margin-bottom: 5px;
     }
 }
 
