@@ -23,6 +23,13 @@ body {
     margin: 0;
 }
 
+@media(min-width: 1152px) {
+    body {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
 fieldset {
     padding: 0;
     margin: 0 0 20px;
@@ -52,12 +59,25 @@ button {
     padding: 10px 30px;
 }
 
+@media(min-width: 1152px) {
+    button {
+        font-size: 24px;
+        padding: 10px 17px;
+    }
+}
+
 ul, ol {
     padding: 0 0 0 16px;
     margin: 0 0 15px 0;
     display: grid;
     row-gap: 4px;
     list-style: none;
+}
+
+@media(min-width: 1152px) {
+    ul, ol {
+        margin-bottom: 0;
+    }
 }
 
 ul:last-child, ol:last-child {
@@ -71,11 +91,17 @@ li {
 li::before {
     content: "—";
     position: absolute;
-    left: -15px;
+    left: -1em;
 }
 
 p {
     margin: 0 0 10px 0;
+}
+
+@media(min-width: 1152px) {
+    p {
+        margin-bottom: 15px;   
+    }
 }
 
 h2, h3, h4 {
@@ -85,8 +111,20 @@ h2, h3, h4 {
     line-height: 1.2;
 }
 
+@media(min-width: 1152px) {
+    h2, h3, h4 {
+        margin: 0 0 20px 0;
+    }
+}
+
 h2 {
     font-size: 30px;
+}
+
+@media(min-width: 1152px) {
+    h2 {
+        font-size: 36px;
+    }
 }
 
 h3 {
@@ -94,9 +132,22 @@ h3 {
     margin-left: 20px;
 }
 
+@media(min-width: 1152px) {
+    h3 {
+        font-size: 36px;
+        margin-left: 60px;
+    }
+}
+
 h4 {
     font-size: 18px;
     color: #333333;
+}
+
+@media(min-width: 1152px) {
+    h4 {
+        font-size: 24px;
+    }
 }
 
 input[type="text"], input[type="tel"] {
@@ -107,6 +158,12 @@ input[type="text"], input[type="tel"] {
     border: 1px solid #e0e0e0;
     font-size: 18px;
     color: #000000;
+}
+
+@media(min-width: 1152px) {
+    input[type="text"], input[type="tel"] {
+        font-size: 24px;
+    }
 }
 
 input::placeholder {
@@ -135,4 +192,12 @@ dt {
 
 input[type="checkbox"] {
     margin: 0 5px 0 0;
+}
+
+@media(min-width: 1152px) {
+    input[type="checkbox"] {
+        height: 21px;
+        width: 21px;
+        margin-right: 10px;
+    }
 }
