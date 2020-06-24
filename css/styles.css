@@ -1,6 +1,23 @@
+@media(min-width: 1152px) {
+    .header-nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #c4c4c4;
+        padding: 20px;
+        align-items: center;
+    }
+}
+
 .header {
     padding: 20px;
     border-bottom: 1px solid #c4c4c4;
+}
+
+@media(min-width: 1152px) {
+    .header {
+        padding: 0;
+        border-bottom: none;
+    }
 }
 
 .nav {
@@ -10,6 +27,16 @@
 .nav__list {
     row-gap: 20px;
     padding: 20px 20px 20px 60px;
+}
+
+@media(min-width: 1152px) {
+    .nav__list {
+        row-gap: 0;
+        padding: 0;
+        grid-auto-flow: column;
+        column-gap: 40px;
+        justify-content: right;
+    }
 }
 
 .nav li::before {
