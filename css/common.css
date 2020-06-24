@@ -91,13 +91,7 @@ li {
 li::before {
     content: "—";
     position: absolute;
-    left: -15px;
-}
-
-@media(min-width: 1152px) {
-    li::before {
-        left: -18px;
-    }
+    left: -1em;
 }
 
 p {
