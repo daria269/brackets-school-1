@@ -189,3 +189,9 @@
     color: #BDBDBD;
     margin: 0;
 }
+
+@media(min-width: 1152px) {
+    .footer br {
+        display: none;
+    }
+}
