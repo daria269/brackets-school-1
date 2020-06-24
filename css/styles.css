@@ -45,6 +45,23 @@
     padding: 0 20px;
 }
 
+@media(min-width: 1152px) {
+    .program {
+        padding: 0 60px;
+    }
+}
+
+@media(min-width: 1152px) {
+    .program__info {
+        display: inline-block;
+        margin-right: 150px;
+    }
+    
+    .program__info:last-child {
+        margin-right: 0;
+    }
+}
+
 .card {
     padding: 20px;
     position: relative;
