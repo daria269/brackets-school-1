@@ -18,6 +18,9 @@
 
 .registration {
     padding: 0 20px;
+    margin-bottom: 30px;
+    display: grid;
+    row-gap: 20px;
 }
 
 .form__label-text {
@@ -36,13 +39,21 @@
     align-items: center;
 }
 
-.registration__title,
+.registration__title {
+    margin-bottom: 0;
+}
+
 .registration__title--small {
     margin-bottom: 20px;
 }
 
 .program {
     padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.projects {
+    margin-bottom: 30px;
 }
 
 .card {
@@ -116,6 +127,10 @@
 
 .reg-companies {
     padding: 0 20px;
+}
+
+.feedback {
+    margin-bottom: 30px;
 }
 
 .feedback-card {
