@@ -21,9 +21,12 @@
 }
 
 @media(min-width: 1152px) {
-  .registration {
-      padding: 0 60px;
-      margin-bottom: 30px;
+    .registration {
+        padding: 0 60px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 400px 400px;
+        column-gap: 80px;
   }
 }
 
@@ -47,46 +50,42 @@
     .form__card {
         background: #c4c4c4;
         border-radius: 15px;
-        height: 180px;
-        padding: 35px 0;
+        padding: 37px 0;
         position: relative;
     }
     .form__card::after {
         content: url("../img/mastercard.svg");
         right: 20px;
-        bottom: 40px;
+        bottom: 37px;
         position: absolute;
         width: 72px;
         height: 42px;
     }
-    .form__label-text--card {
+    .form__card-label {
         color: #e0e0e0;
         background-color: #333333;
         padding: 5px 0 5px 15px;
         margin-bottom: 35px;
     }
-    .form__input-card {
-        width: 255px !important;
-        height: 40px;
+    input.form__card-input {
+        width: 255px;
         margin-left: 15px;
+        padding: 5px 10px;
     }
 }
 
-.registration__title,
-.registration__title--small {
+.registration__title {
     margin-bottom: 20px;
 }
 
 @media(min-width: 1152px) {
-  .registration__section {
-      display: inline-block;
-      margin-right: 80px;
-      width: 400px;
-      vertical-align: top;
-  }
-  .registration__section:last-child {
-      margin-right: 0;
-  }
+    .registration__title {
+        grid-column: 1/-1;
+    }
+}
+
+.registration__title--small {
+    margin-bottom: 20px;
 }
 
 .program {
