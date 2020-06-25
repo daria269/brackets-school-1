@@ -201,3 +201,7 @@ input[type="checkbox"] {
         margin-right: 10px;
     }
 }
+
+.body__section {
+    margin-bottom: 30px;
+}

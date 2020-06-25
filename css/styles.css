@@ -18,7 +18,6 @@
 
 .registration {
     padding: 0 20px;
-    margin-bottom: 30px;
     display: grid;
     row-gap: 20px;
 }
@@ -49,11 +48,6 @@
 
 .program {
     padding: 0 20px;
-    margin-bottom: 30px;
-}
-
-.projects {
-    margin-bottom: 30px;
 }
 
 .card {
@@ -127,10 +121,6 @@
 
 .reg-companies {
     padding: 0 20px;
-}
-
-.feedback {
-    margin-bottom: 30px;
 }
 
 .feedback-card {
