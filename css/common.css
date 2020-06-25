@@ -178,6 +178,15 @@ dd {
     margin: 0;
 }
 
+@media(min-width: 1152px){
+    dd {
+        margin: 0;
+        display: grid;
+        grid-template: min-content min-content min-content/ max-content 1fr;
+        column-gap: 150px;
+    }
+}
+
 dl {
     display: grid;
     row-gap: 20px;

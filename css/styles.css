@@ -49,16 +49,17 @@
     .program {
         padding: 0 60px;
     }
+    .program__desc {
+        grid-column: 1/-1;
+    }
 }
 
-@media(min-width: 1152px) {
-    .program__info {
-        display: inline-block;
-        margin-right: 150px;
+@media(max-width: 1151px) {
+    .program-info {
+        margin-bottom: 15px;
     }
-
-    .program__info:last-child {
-        margin-right: 0;
+    .program-info:last-child {
+        margin-bottom: 0;
     }
 }
 
