@@ -33,7 +33,6 @@ function showFeedbackSlide (number) {
     const triangle = document.createElement('span');
     triangle.classList.add('users-switch__triangle');
     const triangleClass = document.querySelector('.users-switch__triangle');
-    toggles[number-1].children[0].innerHTML='';
 
     triangleClass.parentElement.removeChild(triangleClass);
 
