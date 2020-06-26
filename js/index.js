@@ -2,6 +2,7 @@ const toggleBlock = document.querySelector('.toggle');
 const TOGGLE_ITEM = 'toggle__item';
 const feedbackToggleBlock = document.querySelector('.users-switch');
 const FEEDBACK_TOGGLE_ITEM = 'users-switch__btn';
+const defaultSlideNumber = 1;
 
 //слайдер для учебных проектов
 function showSlides(number) {
@@ -24,7 +25,7 @@ toggleBlock.onclick = function(e) {
     }
 }
 
-showSlides(1);
+showSlides(defaultSlideNumber);
 
 //слайдер для отзывов
 function showFeedbackSlide (number) {
@@ -46,7 +47,7 @@ function showFeedbackSlide (number) {
     toggles[number-1].append(triangle);
 }
 
-showFeedbackSlide(1);
+showFeedbackSlide(defaultSlideNumber);
 
 feedbackToggleBlock.onclick = function(e) {
     const target = e.target;
