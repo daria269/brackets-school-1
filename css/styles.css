@@ -45,7 +45,7 @@
     padding: 0 20px;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .projects {
         margin-bottom: 75px;
     }
@@ -57,7 +57,7 @@
     overflow-y: hidden;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .card {
         padding: 40px 260px;
         display: grid;
@@ -89,7 +89,7 @@
     height: 156px;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .card__bracket {
         position: static;
         width: 10px;
@@ -110,7 +110,7 @@
     align-items: center;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .card__title {
         font-size: 36px;
         padding-left: 0; 
@@ -130,7 +130,7 @@
     left: -12px;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .card__title::before {
         height: 135px;
         width: 135px;
@@ -154,7 +154,7 @@
     top: 5px;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .card--telescope h4::before {
         height: 105px;
         width: 105px;
@@ -171,7 +171,7 @@
     z-index: 1;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .card__desc {
         max-width: 525px;
         font-size: 24px;
@@ -183,7 +183,7 @@
     padding: 0 20px;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .feedback {
         margin-bottom: 175px;
     }
@@ -195,7 +195,7 @@
     padding: 30px 60px 20px 60px;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .feedback-card {
         padding: 40px 0 25px 0;
         display: flex;
@@ -209,7 +209,7 @@
     position: relative;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .feedback-card__blockquote {
         font-size: 24px;
         max-width: 620px;
@@ -227,7 +227,7 @@
     transform: rotate(180deg);
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .feedback-card__blockquote::before {
         top: -4px;
         left: -50px;
@@ -248,7 +248,7 @@
     font-style: italic;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .feedback-card__author {
         width: 620px;
     } 
