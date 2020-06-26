@@ -173,7 +173,7 @@
 
 @media(min-width: 1000px) {
     .card__desc {
-        max-width: 525px;
+        max-width: 620px;
         font-size: 24px;
         padding-right: 110px;
     }
