@@ -3,10 +3,7 @@ const TOGGLE_ITEM = 'toggle__item';
 const feedbackToggleBlock = document.querySelector('.users-switch');
 const FEEDBACK_TOGGLE_ITEM = 'users-switch__btn';
 
-function chooseSlide(number) {
-    showSlides(number)
-}
-
+//слайдер для учебных проектов
 function showSlides(number) {
     const slides = document.querySelectorAll('.card');
     const dots = document.querySelectorAll('.toggle__item');
@@ -23,16 +20,13 @@ function showSlides(number) {
 toggleBlock.onclick = function(e) {
     const target = e.target;
     if (target.className === TOGGLE_ITEM) {
-        chooseSlide(target.dataset.number)
+        showSlides(target.dataset.number)
     }
 }
 
 showSlides(1);
 
-function chooseFeedbackSlide(number) {
-    showFeedbackSlide(number);
-}
-
+//слайдер для отзывов
 function showFeedbackSlide (number) {
     const slides = document.querySelectorAll('.feedback-card');
     const toggles = document.querySelectorAll('.users-switch__btn');
@@ -48,8 +42,6 @@ function showFeedbackSlide (number) {
         toggles[i].classList.remove('users-switch__btn--active');
     }
 
-    
-
     slides[number-1].classList.add('feedback-card--active');
     toggles[number-1].classList.add('users-switch__btn--active');
     toggles[number-1].append(triangle);
@@ -60,6 +52,6 @@ showFeedbackSlide(1);
 feedbackToggleBlock.onclick = function(e) {
     const target = e.target;
     if (target.parentNode.className === FEEDBACK_TOGGLE_ITEM) {
-        chooseFeedbackSlide(target.parentNode.dataset.userNumber)
+        showFeedbackSlide(target.parentNode.dataset.userNumber)
     }
 }
