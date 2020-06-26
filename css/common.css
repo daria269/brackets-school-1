@@ -23,7 +23,7 @@ body {
     margin: 0;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     body {
         font-size: 18px;
         line-height: 1.2;
@@ -59,7 +59,7 @@ button {
     padding: 10px 30px;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     button {
         font-size: 24px;
         padding: 10px 17px;
@@ -74,7 +74,7 @@ ul, ol {
     list-style: none;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     ul, ol {
         margin-bottom: 0;
     }
@@ -98,7 +98,7 @@ p {
     margin: 0 0 10px 0;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     p {
         margin-bottom: 15px;   
     }
@@ -111,7 +111,7 @@ h2, h3, h4 {
     line-height: 1.2;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     h2, h3, h4 {
         margin: 0 0 20px 0;
     }
@@ -121,7 +121,7 @@ h2 {
     font-size: 30px;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     h2 {
         font-size: 36px;
     }
@@ -132,7 +132,7 @@ h3 {
     margin-left: 20px;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     h3 {
         font-size: 36px;
         margin-left: 60px;
@@ -144,7 +144,7 @@ h4 {
     color: #333333;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     h4 {
         font-size: 24px;
     }
@@ -160,7 +160,7 @@ input[type="text"], input[type="tel"] {
     color: #000000;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     input[type="text"], input[type="tel"] {
         font-size: 24px;
     }
@@ -178,11 +178,11 @@ dd {
     margin: 0;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     dd {
         display: grid;
-        grid-template-columns: repeat(2, 400px);
-        column-gap: 10px;
+        grid-template-columns: 380px 400px;
+        column-gap: 20px;
     }
 }
 
@@ -197,7 +197,7 @@ dt {
     font-size: 24px;
     line-height: 1.2;
 }
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     dt {
         font-size: 36px;
     }
@@ -207,7 +207,7 @@ input[type="checkbox"] {
     margin: 0 5px 0 0;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 920px) {
     input[type="checkbox"] {
         height: 21px;
         width: 21px;
