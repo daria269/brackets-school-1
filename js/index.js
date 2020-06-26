@@ -21,7 +21,6 @@ function showSlides(number) {
 toggleBlock.onclick = function(e) {
     const target = e.target;
     if (target.className === TOGGLE_ITEM) {
-        console.log(target.dataset.number)
         chooseSlide(target.dataset.number)
     }
 }
