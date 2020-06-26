@@ -205,3 +205,9 @@ input[type="checkbox"] {
 .body__section {
     margin-bottom: 30px;
 }
+
+@media(min-width: 1000px) {
+    .body__section {
+        margin-bottom: 40px;
+    }
+}

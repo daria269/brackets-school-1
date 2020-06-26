@@ -123,6 +123,16 @@
     padding: 0 20px;
 }
 
+.body__section--feedback {
+    margin-bottom: 60px;
+}
+
+@media(min-width: 1000px) {
+    .body__section--feedback {
+        margin-bottom: 80px;
+    }
+}
+
 .feedback-card {
     color: #f2f2f2;
     background: radial-gradient(50% 50% at 50% 50%, #56ccf2 0%, #2d9cdb 100%);
