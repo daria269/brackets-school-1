@@ -139,7 +139,7 @@
 
 .avatar {
     border-radius: 50%;
-    filter: blur(4px);
+    filter: blur(2px);
 }
 
 .users-switch__btn--active .avatar {
