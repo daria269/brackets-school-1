@@ -49,6 +49,11 @@
     padding: 20px;
     position: relative;
     overflow-y: hidden;
+    display: none;
+}
+
+.card--active {
+    display: block;
 }
 
 .card--microphone {
