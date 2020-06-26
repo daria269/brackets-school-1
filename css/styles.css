@@ -14,7 +14,7 @@
     top: 80px;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .header {
         display: flex;
         justify-content: space-between;
@@ -31,7 +31,7 @@
     padding: 45px 0 0 40px;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .nav__list {
         row-gap: 0;
         padding: 0;
@@ -192,7 +192,7 @@
     display: grid;
 }
 
-@media(min-width: 1152px) {
+@media(min-width: 1000px) {
     .footer__text {
         grid-auto-flow: column;
         column-gap: 0.4em;
