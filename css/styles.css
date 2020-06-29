@@ -68,6 +68,14 @@
         margin-bottom: 5px;
     }
 }
+@media(min-width: 1000px) {
+    .program__dd {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        column-gap: 20px;
+    }
+}
+
 
 .card {
     padding: 20px;

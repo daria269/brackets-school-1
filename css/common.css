@@ -178,14 +178,6 @@ dd {
     margin: 0;
 }
 
-@media(min-width: 1000px) {
-    dd {
-        display: grid;
-        grid-template-columns: repeat(2, 400px);
-        column-gap: 20px;
-    }
-}
-
 dl {
     display: grid;
     row-gap: 20px;
