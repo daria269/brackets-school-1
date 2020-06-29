@@ -31,11 +31,10 @@ showSlides(defaultSlideNumber);
 function showFeedbackSlide (number) {
     const slides = document.querySelectorAll('.feedback-card');
     const toggles = document.querySelectorAll('.users-switch__btn');
-    const triangle = document.createElement('span');
-    triangle.classList.add('users-switch__triangle');
-    const triangleClass = document.querySelector('.users-switch__triangle');
+    const triangle = document.querySelector('.users-switch__triangle');
+    const defaultTriangleMovementVal = 65;
 
-    triangleClass.parentElement.removeChild(triangleClass);
+    triangle.style.left = defaultTriangleMovementVal * number + 'px';
 
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove('feedback-card--active');
@@ -44,7 +43,6 @@ function showFeedbackSlide (number) {
 
     slides[number-1].classList.add('feedback-card--active');
     toggles[number-1].classList.add('users-switch__btn--active');
-    toggles[number-1].append(triangle);
 }
 
 showFeedbackSlide(defaultSlideNumber);

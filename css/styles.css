@@ -126,12 +126,11 @@
     border-width: 30px 30px 0 0;
     border-color: #2d9cdb transparent transparent transparent;
     position: absolute;
-    top: -30px;
-    left: 35px;
+    top: -1px;
+    left: 65px;
 }
 
 .users-switch__btn {
-    position: relative;
     border: none;
     background: transparent;
     padding: 0;
