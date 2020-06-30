@@ -1,20 +1,20 @@
-const programBlock = document.querySelector('.program');
+const accordion = document.querySelector('.accordion');
+accordion.addEventListener('click', e => {
+    e.preventDefault();
+    const target = e.target;
+    if(target.classList.contains('accordion__trigger')) {
 
+        const isExpanded = target.getAttribute('aria-expanded') == 'true';
+        const active = accordion.querySelector('[aria-expanded="true"]');
 
-function doAccordion(number) {
-    const descriptionDefenitions = document.querySelectorAll('.program__dd');
+        if(active && active !== target) {
+            active.setAttribute('aria-expanded', 'false');
+            document.getElementById(active.getAttribute('aria-controls')).setAttribute('hidden', 'true');
+        }
 
-    for (let i = 0; i < descriptionDefenitions.length; i++) {
-        if (descriptionDefenitions[i].classList.contains('program__dd--active')) {
-            descriptionDefenitions[i].classList.remove('program__dd--active');
+        if(!isExpanded) {
+            target.setAttribute('aria-expanded', 'true');
+            document.getElementById(target.getAttribute('aria-controls')).removeAttribute('hidden');
         }
     }
-
-    descriptionDefenitions[number-1].classList.add('program__dd--active');
-}
-
-programBlock.onclick = function(e) {
-    if (e.target.classList.contains('program__link')) {
-        doAccordion(e.target.parentNode.dataset.accordionNumber);
-    }
-}
+})
