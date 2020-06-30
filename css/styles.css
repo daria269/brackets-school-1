@@ -1,6 +1,25 @@
 .header {
     padding: 20px;
-    border-bottom: 1px solid #c4c4c4;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.header::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #c4c4c4;
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+@media(min-width: 1000px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .nav {
@@ -9,7 +28,16 @@
 
 .nav__list {
     row-gap: 20px;
-    padding: 20px 20px 20px 60px;
+    padding: 45px 0 0 40px;
+}
+
+@media(min-width: 1000px) {
+    .nav__list {
+        row-gap: 0;
+        padding: 0;
+        grid-auto-flow: column;
+        column-gap: 40px;
+    }
 }
 
 .nav li::before {
@@ -176,4 +204,12 @@
 .footer__text {
     color: #BDBDBD;
     margin: 0;
+    display: grid;
+}
+
+@media(min-width: 1000px) {
+    .footer__text {
+        grid-auto-flow: column;
+        column-gap: 0.4em;
+    }
 }
