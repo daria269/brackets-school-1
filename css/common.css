@@ -201,3 +201,13 @@ input[type="checkbox"] {
         margin-right: 10px;
     }
 }
+
+.body__section {
+    margin-bottom: 30px;
+}
+
+@media(min-width: 1000px) {
+    .body__section {
+        margin-bottom: 40px;
+    }
+}
