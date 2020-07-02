@@ -1,6 +1,25 @@
 .header {
     padding: 20px;
-    border-bottom: 1px solid #c4c4c4;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.header::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #c4c4c4;
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+@media(min-width: 1000px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .nav {
@@ -9,7 +28,16 @@
 
 .nav__list {
     row-gap: 20px;
-    padding: 20px 20px 20px 60px;
+    padding: 45px 0 0 40px;
+}
+
+@media(min-width: 1000px) {
+    .nav__list {
+        row-gap: 0;
+        padding: 0;
+        grid-auto-flow: column;
+        column-gap: 40px;
+    }
 }
 
 .nav li::before {
@@ -18,6 +46,8 @@
 
 .registration {
     padding: 0 20px;
+    display: grid;
+    row-gap: 20px;
 }
 
 @media(min-width: 1000px) {
@@ -82,6 +112,7 @@
     .registration__title {
         grid-column: 1/-1;
     }
+
 }
 
 .registration__title--small {
@@ -91,6 +122,38 @@
 .program {
     padding: 0 20px;
 }
+
+@media(min-width: 1000px) {
+    .program {
+        padding: 0 60px;
+    }
+    .program__desc {
+        grid-column: 1/-1;
+    }
+}
+
+@media(max-width: 1000px) {
+    .program-info {
+        margin-bottom: 15px;
+    }
+    .program-info:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media(min-width: 1000px) {
+    .program-info__title {
+        margin-bottom: 5px;
+    }
+}
+@media(min-width: 1000px) {
+    .program__dd {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        column-gap: 20px;
+    }
+}
+
 
 .card {
     padding: 20px;
@@ -161,6 +224,20 @@
     z-index: 1;
 }
 
+.reg-companies {
+    padding: 0 20px;
+}
+
+.body__section--feedback {
+    margin-bottom: 60px;
+}
+
+@media(min-width: 1000px) {
+    .body__section--feedback {
+        margin-bottom: 80px;
+    }
+}
+
 .feedback-card {
     color: #f2f2f2;
     background: radial-gradient(50% 50% at 50% 50%, #56ccf2 0%, #2d9cdb 100%);
@@ -204,4 +281,12 @@
 .footer__text {
     color: #BDBDBD;
     margin: 0;
+    display: grid;
+}
+
+@media(min-width: 1000px) {
+    .footer__text {
+        grid-auto-flow: column;
+        column-gap: 0.4em;
+    }
 }
