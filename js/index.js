@@ -49,7 +49,7 @@ showFeedbackSlide(defaultSlideNumber);
 
 feedbackToggleBlock.onclick = function(e) {
     const target = e.target;
-    if (target.parentNode.className === FEEDBACK_TOGGLE_ITEM) {
-        showFeedbackSlide(target.parentNode.dataset.userNumber)
+    if (target.className === FEEDBACK_TOGGLE_ITEM) {
+        showFeedbackSlide(target.dataset.userNumber)
     }
 }
