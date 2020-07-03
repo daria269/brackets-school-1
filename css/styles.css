@@ -33,7 +33,7 @@
     display: block;
 }
 
-.nav__btn[aria-expanded="false"] {
+.nav__btn {
     top: 35px;
     right: 20px;
     width: 30px;
