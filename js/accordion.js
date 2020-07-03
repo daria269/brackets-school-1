@@ -1,5 +1,5 @@
 const accordion = document.querySelector('.accordion');
-accordion.addEventListener('click', e => {
+accordion.addEventListener('click', function (e) {
     e.preventDefault();
     const target = e.target;
     if(target.classList.contains('accordion__trigger')) {
