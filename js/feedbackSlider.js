@@ -1,6 +1,3 @@
-const TOGGLE_ITEM_CLASS = 'toggle__item';
-const FEEDBACK_TOGGLE_ITEM_CLASS = 'users-switch__btn';
-
 const toggleBlock = document.querySelector('.toggle');
 const feedbackToggleBlock = document.querySelector('.users-switch');
 const feedbackToggles = document.querySelectorAll('.users-switch__btn');
