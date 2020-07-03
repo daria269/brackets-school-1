@@ -59,9 +59,9 @@
 
 @media(min-width: 1000px) {
     .card {
-        padding: 40px 260px;
+        padding: 40px 0;
         display: grid;
-        grid-template-columns: max-content min-content;
+        grid-template-columns: 625px min-content;
         justify-content: center;
     }
 }
@@ -173,7 +173,6 @@
 
 @media(min-width: 1000px) {
     .card__desc {
-        max-width: 620px;
         font-size: 24px;
         padding-right: 110px;
     }
@@ -198,9 +197,10 @@
 @media(min-width: 1000px) {
     .feedback-card {
         padding: 40px 0 25px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 625px;
+        justify-content: center;
+        row-gap: 10px;
     }
 }
 
@@ -212,7 +212,7 @@
 @media(min-width: 1000px) {
     .feedback-card__blockquote {
         font-size: 24px;
-        max-width: 620px;
+        margin: 0;
     }
 }
 
