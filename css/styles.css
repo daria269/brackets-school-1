@@ -40,19 +40,19 @@
     height: 20px;
 }
 
-.nav__btn[aria-expanded="true"] .menu-btn__burger {
+.nav__btn[aria-expanded=""] .menu-btn__burger {
     display: none;
 }
 
-.nav__btn[aria-expanded="true"] .menu-btn__cross {
+.nav__btn[aria-expanded=""] .menu-btn__cross {
     display: block;
 }
 
-.nav__btn[aria-expanded="false"] .menu-btn__burger {
+.menu-btn__burger {
     display: block
 }
 
-.nav__btn[aria-expanded="false"] .menu-btn__cross {
+.menu-btn__cross {
     display: none;
 }
 
