@@ -57,7 +57,7 @@
         display: grid;
         grid-template-columns: 400px 400px;
         column-gap: 80px;
-  }
+    }
 }
 
 .form__label-text {
@@ -83,6 +83,7 @@
         padding: 37px 0;
         position: relative;
     }
+
     .form__card::after {
         content: url("../img/mastercard.svg");
         right: 20px;
@@ -91,12 +92,14 @@
         width: 72px;
         height: 42px;
     }
+
     .form__card-label {
         color: #e0e0e0;
         background-color: #333333;
         padding: 5px 0 5px 15px;
         margin-bottom: 35px;
     }
+
     input.form__card-input {
         width: 255px;
         margin-left: 15px;
@@ -112,7 +115,6 @@
     .registration__title {
         grid-column: 1/-1;
     }
-
 }
 
 .registration__title--small {
@@ -128,13 +130,15 @@
         margin-bottom: 75px;
     }
 }
+@media(min-width: 1000px) {
+    .program {
+    padding: 0 60px;
+    }
+}
 
-.program {
-        padding: 0 60px;
-    }
 .program__desc {
-        grid-column: 1/-1;
-    }
+    grid-column: 1/-1;
+}
 
 @media(max-width: 1000px) {
     .program-info {
@@ -289,6 +293,7 @@
         font-size: 24px;
         padding-right: 110px;
     }
+}
 
 .users-switch__triangle {
     width: 0;
@@ -388,6 +393,7 @@
         justify-content: center;
         row-gap: 10px;
     }
+}
 
 .feedback-card--active {
     display: block;
