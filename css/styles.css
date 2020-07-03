@@ -57,7 +57,7 @@
         display: grid;
         grid-template-columns: 400px 400px;
         column-gap: 80px;
-  }
+    }
 }
 
 .form__label-text {
@@ -83,6 +83,7 @@
         padding: 37px 0;
         position: relative;
     }
+
     .form__card::after {
         content: url("../img/mastercard.svg");
         right: 20px;
@@ -91,12 +92,14 @@
         width: 72px;
         height: 42px;
     }
+
     .form__card-label {
         color: #e0e0e0;
         background-color: #333333;
         padding: 5px 0 5px 15px;
         margin-bottom: 35px;
     }
+
     input.form__card-input {
         width: 255px;
         margin-left: 15px;
@@ -112,7 +115,6 @@
     .registration__title {
         grid-column: 1/-1;
     }
-
 }
 
 .registration__title--small {
@@ -138,12 +140,18 @@
 }
 
 @media(min-width: 1000px) {
+    .projects {
+        margin-bottom: 75px;
+    }
+}
+@media(min-width: 1000px) {
     .program {
-        padding: 0 60px;
+    padding: 0 60px;
     }
-    .program__desc {
-        grid-column: 1/-1;
-    }
+}
+
+.program__desc {
+    grid-column: 1/-1;
 }
 
 @media(max-width: 1000px) {
@@ -160,6 +168,7 @@
         margin-bottom: 5px;
     }
 }
+
 @media(min-width: 1000px) {
     .program__dd {
         display: grid;
@@ -175,8 +184,13 @@
     display: none;
 }
 
-.card--active {
-    display: block;
+@media(min-width: 1000px) {
+    .card {
+        padding: 40px 0;
+        grid-template-columns: 625px min-content;
+        justify-content: center;
+        display: none;
+    }
 }
 
 .card--microphone {
@@ -194,12 +208,25 @@
     fill: #9A704C;
 }
 
+.card--active {
+    display: grid;
+}
+
 .card__bracket {
     position: absolute;
     right: 32px;
     top: calc(50% - 78px);
     width: 40px;
     height: 156px;
+}
+
+@media(min-width: 1000px) {
+    .card__bracket {
+        position: static;
+        width: 10px;
+        height: 37px;
+        align-self: center;
+    }
 }
 
 .card__title {
@@ -214,8 +241,19 @@
     align-items: center;
 }
 
+@media(min-width: 1000px) {
+    .card__title {
+        font-size: 36px;
+        padding-left: 0;
+        min-height: 0;
+        margin-bottom: 10px;
+    }
+}
+
 .card__title::before {
-    content: url('../img/microphone.png');
+    content: "";
+    background: url('../img/microphone.png') no-repeat;
+    background-size: cover;
     position: absolute;
     height: 70px;
     width: 70px;
@@ -223,16 +261,38 @@
     left: -12px;
 }
 
-.card--joker > h4::before {
-    content: url('../img/joker.png');
+@media(min-width: 1000px) {
+    .card__title::before {
+        height: 135px;
+        width: 135px;
+        top: 60px;
+        right: -30px;
+        left: unset;
+    }
 }
 
-.card--telescope > h4::before {
-    content: url('../img/telescope.png');
+.card--joker h4::before {
+    background: url('../img/joker.png') no-repeat;
+    background-size: cover;
+}
+
+.card--telescope h4::before {
+    background: url('../img/telescope.png') no-repeat;
+    background-size: cover;
     height: 60px;
     width: 60px;
     left: -2px;
     top: 5px;
+}
+
+@media(min-width: 1000px) {
+    .card--telescope h4::before {
+        height: 105px;
+        width: 105px;
+        top: 60px;
+        right: -10px;
+        left: unset;
+    }
 }
 
 .card__desc {
@@ -240,6 +300,13 @@
     margin: 0;
     color: #F2F2F2;
     z-index: 1;
+}
+
+@media(min-width: 1000px) {
+    .card__desc {
+        font-size: 24px;
+        padding-right: 110px;
+    }
 }
 
 .users-switch__triangle {
@@ -319,11 +386,27 @@
     }
 }
 
+@media(min-width: 1000px) {
+    .feedback {
+        margin-bottom: 175px;
+    }
+}
+
 .feedback-card {
     display: none;
     color: #f2f2f2;
     background: radial-gradient(50% 50% at 50% 50%, #56ccf2 0%, #2d9cdb 100%);
     padding: 30px 60px 20px 60px;
+}
+
+@media(min-width: 1000px) {
+    .feedback-card {
+        padding: 40px 0 25px 0;
+        display: grid;
+        grid-template-columns: 625px;
+        justify-content: center;
+        row-gap: 10px;
+    }
 }
 
 .feedback-card--active {
@@ -333,6 +416,13 @@
 .feedback-card__blockquote {
     margin: 0 0 10px 0;
     position: relative;
+}
+
+@media(min-width: 1000px) {
+    .feedback-card__blockquote {
+        font-size: 24px;
+        margin: 0;
+    }
 }
 
 .feedback-card__blockquote::before {
@@ -346,6 +436,13 @@
     transform: rotate(180deg);
 }
 
+@media(min-width: 1000px) {
+    .feedback-card__blockquote::before {
+        top: -4px;
+        left: -50px;
+    }
+}
+
 .feedback-card__blockquote::after {
     content: "";
     background: url("../img/bracket.svg") repeat;
@@ -354,6 +451,16 @@
     position: absolute;
     bottom: -4px;
     right: -40px;
+}
+
+.feedback-card p {
+    font-style: italic;
+}
+
+@media(min-width: 1000px) {
+    .feedback-card__author {
+        width: 620px;
+    }
 }
 
 .footer {
