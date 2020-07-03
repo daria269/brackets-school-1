@@ -68,7 +68,7 @@
         </section>
         <section class="body__section">
             <h3>Учебные проекты</h3>
-            <article class="card card--microphone">
+            <article class="card card--active card--microphone">
                 <h4 class="card__title">Новостной сайт «Бургундия»</h4>
                 <p class="card__desc">Небольшой новостной проект. В этом проекте вы поработаете с базами данных, сделаете роутинг, серверный рендеринг и напишете API для общения с клиентом</p>
                 <svg class="card__bracket"><use xlink:href="#bracket"/></svg>
@@ -83,6 +83,11 @@
                 <p class="card__desc">Онлайн-карта. На фронте используется Google Maps, но вам предстоит сгенерировать картинки поверхности всей планеты и придумать как передавать их на клиент</p>
                 <svg class="card__bracket"><use xlink:href="#bracket"/></svg>
             </article>
+            <div class="toggle">
+                <button class="toggle__item toggle__item--active" data-number="1"></button>
+                <button class="toggle__item" data-number="2"></button>
+                <button class="toggle__item" data-number="3"></button>
+            </div>
         </section>
         <section class="body__section body__section--feedback">
             <h3>Отзывы выпускников</h3>
@@ -130,6 +135,8 @@
         <p class="footer__text">Сделано в <a href="http://oneboot.camp/">OneBootcamp</a></p>
         <a href="#header"><img src="./img/logo.svg" width="202" height="44" alt="Школа программирования на LISP Brackets"></a>
     </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
