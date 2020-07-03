@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: "Roboto";
-    src: url("../fonts/Roboto.ttf");
+    src: url("../fonts/Roboto-Italic.ttf");
     font-style: italic;
 }
 
@@ -100,7 +100,7 @@ p {
 
 @media(min-width: 1000px) {
     p {
-        margin-bottom: 15px;   
+        margin-bottom: 15px;
     }
 }
 
@@ -189,6 +189,11 @@ dt {
     font-size: 24px;
     line-height: 1.2;
 }
+@media(min-width: 1000px) {
+    dt {
+        font-size: 36px;
+    }
+}
 
 input[type="checkbox"] {
     margin: 0 5px 0 0;
@@ -199,5 +204,15 @@ input[type="checkbox"] {
         height: 21px;
         width: 21px;
         margin-right: 10px;
+    }
+}
+
+.body__section {
+    margin-bottom: 30px;
+}
+
+@media(min-width: 1000px) {
+    .body__section {
+        margin-bottom: 40px;
     }
 }
