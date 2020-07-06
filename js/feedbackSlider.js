@@ -1,4 +1,3 @@
-
 const feedbackToggleBlock = document.querySelector('.users-switch');
 const feedbackToggles = document.querySelectorAll('.users-switch__btn');
 
