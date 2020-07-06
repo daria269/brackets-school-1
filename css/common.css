@@ -42,12 +42,12 @@ fieldset {
     box-sizing: border-box;
 }
 
-a:link:hover {
-    color: #56CCF2;
-}
-
 a:link {
     color: #2D9CDB;
+}
+
+a:link:hover {
+    color: #56CCF2;
 }
 
 button {

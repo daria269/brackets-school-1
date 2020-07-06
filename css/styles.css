@@ -110,20 +110,20 @@
     }
 }
 
-.nav__btn[aria-expanded=""] .menu-btn__burger {
-    display: none;
-}
-
-.nav__btn[aria-expanded=""] .menu-btn__cross {
-    display: block;
-}
-
 .menu-btn__burger {
     display: block
 }
 
 .menu-btn__cross {
     display: none;
+}
+
+.nav__btn[aria-expanded=""] .menu-btn__burger {
+    display: none;
+}
+
+.nav__btn[aria-expanded=""] .menu-btn__cross {
+    display: block;
 }
 
 .registration {
