@@ -10,9 +10,8 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "cowsay": "^1.4.0"
-  },
-  "dependencies": {
+    "cowsay": "^1.4.0",
     "live-server": "^1.2.1"
-  }
+  },
+  "dependencies": {}
 }
