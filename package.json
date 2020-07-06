@@ -11,7 +11,7 @@
   "devDependencies": {
     "cowsay": "^1.4.0",
     "stylelint": "^13.6.1",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-recommended": "^3.0.0"
   },
   "dependencies": {}
 }
