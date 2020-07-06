@@ -5,10 +5,14 @@
   "description": "Учебный проект на буткепме OneBootcamp",
   "main": "src/index.js",
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "start": "live-server"
   },
   "license": "ISC",
   "devDependencies": {
     "cowsay": "^1.4.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
   }
 }
