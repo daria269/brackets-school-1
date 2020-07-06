@@ -1,10 +1,9 @@
 .header {
     position: relative;
-    padding-bottom: 20px;
 }
 
 .header__logo {
-    margin: 20px 0 0 20px;
+    margin: 20px 0 20px 20px;
 }
 
 @media(min-width: 1000px) {
@@ -21,6 +20,7 @@
     position: absolute;
     left: 0;
     top: 80px;
+    z-index: 10;
 }
 
 @media(min-width: 1000px) {
@@ -35,19 +35,43 @@
 .nav {
     height: 0;
     font-size: 18px;
+    position: relative;
 }
 
 .nav--active {
     height: 100%;
+}
+
+.nav--active::before {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    z-index: 9;
+    display: block;
+    position: absolute;
     background: linear-gradient(180deg, #56CCF2 0%, rgba(86, 204, 242, 0.5) 100%);
+}
+
+@media(min-width: 1000px) {
+    .nav--active {
+        background: none;
+    }
+
+    .nav--active::before {
+        display: none;
+    }
 }
 
 .nav__list {
     row-gap: 20px;
-    padding: 45px 0 20px 65px;
+    padding: 20px 0 20px 65px;
     background: #ffffff;
     box-shadow: 0px 70px 50px #33759A;
     display: none;
+    position: relative;
+    z-index: 9;
 }
 
 .nav--active .nav__list {
@@ -70,7 +94,7 @@
 
 .nav__btn {
     position: absolute;
-    top: 35px;
+    top: -54px;
     right: 20px;
     width: 30px;
     height: 20px;
@@ -194,7 +218,14 @@
     color: #2D9CDB;
     padding: 0;
     font-weight: 700;
-    font-size: 36px;
+    text-align: left;
+    font-size: 24px;
+}
+
+@media(min-width: 1000px) {
+    .accordion__trigger {
+        font-size: 36px;
+    }
 }
 
 @media(min-width: 1000px) {
@@ -228,7 +259,7 @@
 }
 
 @media(min-width: 1000px) {
-    .program__dd {
+    .accordion__panel {
         display: grid;
         grid-template-columns: repeat(2, 400px);
         column-gap: 20px;
@@ -412,6 +443,12 @@
     padding-top: 10px;
 }
 
+@media(min-width: 1000px) {
+    .toggle {
+        padding-top: 20px;
+    }
+}
+
 .toggle__item {
     border: 1px solid #4F4F4F;
     width: 13px;
@@ -460,7 +497,6 @@
 @media(min-width: 1000px) {
     .feedback-card {
         padding: 40px 0 25px 0;
-        display: grid;
         grid-template-columns: 625px;
         justify-content: center;
         row-gap: 10px;
@@ -469,6 +505,12 @@
 
 .feedback-card--active {
     display: block;
+}
+
+@media(min-width: 1000px) {
+    .feedback-card--active {
+        display: grid;
+    }
 }
 
 .feedback-card__blockquote {
@@ -513,12 +555,6 @@
 
 .feedback-card p {
     font-style: italic;
-}
-
-@media(min-width: 1000px) {
-    .feedback-card__author {
-        width: 620px;
-    }
 }
 
 .footer {
