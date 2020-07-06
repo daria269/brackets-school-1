@@ -5,10 +5,14 @@
   "description": "Учебный проект на буткепме OneBootcamp",
   "main": "src/index.js",
   "scripts": {
-    "test": "exit 0"
+    "test": "stylelint **/*.css"
   },
   "license": "ISC",
   "devDependencies": {
     "cowsay": "^1.4.0"
+  },
+  "dependencies": {
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
