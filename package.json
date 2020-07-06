@@ -9,10 +9,10 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "cowsay": "^1.4.0"
+    "cowsay": "^1.4.0",
+    "stylelint": "^13.6.1"
   },
   "dependencies": {
-    "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0"
   }
 }
