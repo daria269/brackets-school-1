@@ -73,7 +73,7 @@
 
 .card__title::before {
     content: "";
-    background: url('../img/microphone.png') no-repeat;
+    background: url('../../img/microphone.png') no-repeat;
     background-size: cover;
     position: absolute;
     height: 70px;
@@ -93,12 +93,12 @@
 }
 
 .card--joker h4::before {
-    background: url('../img/joker.png') no-repeat;
+    background: url('../../img/joker.png') no-repeat;
     background-size: cover;
 }
 
 .card--telescope h4::before {
-    background: url('../img/telescope.png') no-repeat;
+    background: url('../../img/telescope.png') no-repeat;
     background-size: cover;
     height: 60px;
     width: 60px;
