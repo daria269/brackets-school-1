@@ -10,7 +10,6 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "cowsay": "^1.4.0",
     "live-server": "^1.2.1",
     "stylelint": "^13.6.1",
     "stylelint-config-recommended": "^3.0.0"
