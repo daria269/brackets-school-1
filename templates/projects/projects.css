@@ -1,0 +1,168 @@
+.card {
+    padding: 20px;
+    position: relative;
+    overflow-y: hidden;
+    display: none;
+}
+
+@media(min-width: 1000px) {
+    .card {
+        padding: 40px 0;
+        grid-template-columns: 625px min-content;
+        justify-content: center;
+        display: none;
+    }
+}
+
+.card--microphone {
+    background: radial-gradient(68.33% 282.68% at 0% 100%, #711F1F 0%, #B74343 100%);
+    fill: #953232;
+}
+
+.card--joker {
+    background: radial-gradient(112.82% 100% at 46.94% 0%, #219653 0%, #27AE60 96.09%);
+    fill: #42B773;
+}
+
+.card--telescope {
+    background: radial-gradient(112.82% 206.84% at 50% 100%, #4F4F4F 0%, #F2994A 100%);
+    fill: #9A704C;
+}
+
+.card--active {
+    display: grid;
+}
+
+.card__bracket {
+    position: absolute;
+    right: 32px;
+    top: calc(50% - 78px);
+    width: 40px;
+    height: 156px;
+}
+
+@media(min-width: 1000px) {
+    .card__bracket {
+        position: static;
+        width: 10px;
+        height: 37px;
+        align-self: center;
+    }
+}
+
+.card__title {
+    font-size: 30px;
+    color: #F2F2F2;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+    padding-left: 60px;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+@media(min-width: 1000px) {
+    .card__title {
+        font-size: 36px;
+        padding-left: 0;
+        min-height: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.card__title::before {
+    content: "";
+    background: url('../img/microphone.png') no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    top: 0;
+    left: -12px;
+}
+
+@media(min-width: 1000px) {
+    .card__title::before {
+        height: 135px;
+        width: 135px;
+        top: 60px;
+        right: -30px;
+        left: unset;
+    }
+}
+
+.card--joker h4::before {
+    background: url('../img/joker.png') no-repeat;
+    background-size: cover;
+}
+
+.card--telescope h4::before {
+    background: url('../img/telescope.png') no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    left: -2px;
+    top: 5px;
+}
+
+@media(min-width: 1000px) {
+    .card--telescope h4::before {
+        height: 105px;
+        width: 105px;
+        top: 60px;
+        right: -10px;
+        left: unset;
+    }
+}
+
+.card__desc {
+    position: relative;
+    margin: 0;
+    color: #F2F2F2;
+    z-index: 1;
+}
+
+@media(min-width: 1000px) {
+    .card__desc {
+        font-size: 24px;
+        padding-right: 110px;
+    }
+}
+
+.toggle {
+    width: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 17px;
+    padding-top: 10px;
+}
+
+@media(min-width: 1000px) {
+    .toggle {
+        padding-top: 20px;
+    }
+}
+
+.toggle__item {
+    border: 1px solid #4F4F4F;
+    width: 13px;
+    height: 13px;
+    background: none;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.toggle__item:hover {
+    border: 1px solid #56CCF2;
+}
+
+.toggle__item--active {
+    background: #56CCF2;
+}
+
+.toggle__item:focus {
+    border: 1px solid #56CCF2;
+}

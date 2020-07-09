@@ -1,0 +1,121 @@
+.body__section--feedback {
+    margin-bottom: 60px;
+}
+
+@media(min-width: 1000px) {
+    .body__section--feedback {
+        margin-bottom: 80px;
+    }
+}
+
+@media(min-width: 1000px) {
+    .feedback {
+        margin-bottom: 175px;
+    }
+}
+
+.feedback-card {
+    display: none;
+    color: #f2f2f2;
+    background: radial-gradient(50% 50% at 50% 50%, #56ccf2 0%, #2d9cdb 100%);
+    padding: 30px 60px 20px 60px;
+}
+
+@media(min-width: 1000px) {
+    .feedback-card {
+        padding: 40px 0 25px 0;
+        grid-template-columns: 625px;
+        justify-content: center;
+        row-gap: 10px;
+    }
+}
+
+.feedback-card--active {
+    display: block;
+}
+
+@media(min-width: 1000px) {
+    .feedback-card--active {
+        display: grid;
+    }
+}
+
+.feedback-card__blockquote {
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+@media(min-width: 1000px) {
+    .feedback-card__blockquote {
+        font-size: 24px;
+        margin: 0;
+    }
+}
+
+.feedback-card__blockquote::before {
+    content: "";
+    background: url("../img/bracket.svg") repeat;
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    top: -10px;
+    left: -40px;
+    transform: rotate(180deg);
+}
+
+@media(min-width: 1000px) {
+    .feedback-card__blockquote::before {
+        top: -4px;
+        left: -50px;
+    }
+}
+
+.feedback-card__blockquote::after {
+    content: "";
+    background: url("../img/bracket.svg") repeat;
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    bottom: -4px;
+    right: -40px;
+}
+
+.feedback-card p {
+    font-style: italic;
+}
+
+.users-switch__triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 30px 0 0;
+    border-color: #2d9cdb transparent transparent transparent;
+    position: absolute;
+    top: -1px;
+    left: 65px;
+}
+
+.users-switch__btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.avatar {
+    border-radius: 50%;
+    filter: blur(2px);
+    pointer-events: none;
+}
+
+.users-switch__btn--active .avatar {
+    filter: none;
+}
+
+.users-switch {
+    display: grid;
+    column-gap: 20px;
+    padding: 30px 0 0 35px;
+    position: relative;
+    grid-auto-flow: column;
+    justify-content: left;
+}
