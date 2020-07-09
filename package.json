@@ -6,13 +6,15 @@
   "main": "src/index.js",
   "scripts": {
     "start": "live-server",
-    "test": "stylelint **/*.css"
+    "test": "stylelint **/*.css",
+    "build": "uglifyjs js/accordion.js js/feedbackSlider.js js/menu.js js/projects.js -o js/index.min.js -c"
   },
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.1",
     "stylelint": "^13.6.1",
-    "stylelint-config-recommended": "^3.0.0"
+    "stylelint-config-recommended": "^3.0.0",
+    "uglify-js-es6": "^2.8.9"
   },
   "dependencies": {}
 }
