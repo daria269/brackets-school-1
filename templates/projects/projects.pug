@@ -1,12 +1,13 @@
-section.body__section#projects
-    h3 Учебные проекты
-    each article in project_items
-        article.card.card--microphone.card--active
-            h4.card__title #{article.title}
-            svg.card__bracket
-                use(xlink:href="#bracket")
-            p.card__desc #{article.description}
-    div.toggle
-        button.toggle__item.toggle__item--active
-        button.toggle__item
-        button.toggle__item
+if (project_items.length > 0)
+    section.body__section#projects
+        h3 Учебные проекты
+        each article in project_items
+            article.card.card--microphone.card--active
+                h4.card__title #{article.title}
+                svg.card__bracket
+                    use(xlink:href="#bracket")
+                p.card__desc #{article.description}
+        div.toggle
+            button.toggle__item.toggle__item--active
+            button.toggle__item
+            button.toggle__item

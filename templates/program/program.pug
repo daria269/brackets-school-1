@@ -1,21 +1,22 @@
-section.program.body__section#program
-    h2 Программа курса
-    p Длительность курса — 9 недель
-    dl.accordion
-        each panel, i in program_items
-            dt#introduction
-                button.accordion__trigger(aria-expanded=(i == 0 ? "true" : "false")  aria-controls="tab" + (i+1)) #{i+1 + "." + " " + panel.title}
-                dd(class="accordion__panel" id="tab" + (i+1))
-                    p
-                        em #{panel.duration}
-                    p.program__desc #{panel.description}
-                    article.program-info
-                        h4.program-info__title Теория
-                        ul
-                            each item in panel.theory_items
-                                li #{item}
-                    article.program-info
-                        h4.program-info__title Практика
-                        ul
-                            each item in panel.practice_items
-                                li #{item}
+if (program_items.length > 0)
+    section.program.body__section#program
+        h2 Программа курса
+        p Длительность курса — 9 недель
+        dl.accordion
+            each panel, i in program_items
+                dt#introduction
+                    button.accordion__trigger(aria-expanded=(i == 0 ? "true" : "false")  aria-controls="tab" + (i+1)) #{i+1 + "." + " " + panel.title}
+                    dd(class="accordion__panel" id="tab" + (i+1))
+                        p
+                            em #{panel.duration}
+                        p.program__desc #{panel.description}
+                        article.program-info
+                            h4.program-info__title Теория
+                            ul
+                                each item in panel.theory_items
+                                    li #{item}
+                        article.program-info
+                            h4.program-info__title Практика
+                            ul
+                                each item in panel.practice_items
+                                    li #{item}
