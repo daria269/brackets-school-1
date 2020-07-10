@@ -7,7 +7,7 @@
   "scripts": {
     "start": "live-server",
     "test": "stylelint **/*.css",
-    "build": "pug -o . templates/index.pug & csso css/index.css --output css/index.min.css & uglifyjs js/accordion.js js/feedbackSlider.js js/menu.js js/projects.js -o js/index.min.js -c"
+    "build": "pug -O data.json -o . templates/index.pug & csso css/index.css --output css/index.min.css & uglifyjs js/accordion.js js/feedbackSlider.js js/menu.js js/projects.js -o js/index.min.js -c"
   },
   "license": "ISC",
   "devDependencies": {
