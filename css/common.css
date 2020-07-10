@@ -216,3 +216,13 @@ input[type="checkbox"] {
         margin-bottom: 40px;
     }
 }
+
+.body__section--feedback {
+    margin-bottom: 60px;
+}
+
+@media(min-width: 1000px) {
+    .body__section--feedback {
+        margin-bottom: 80px;
+    }
+}

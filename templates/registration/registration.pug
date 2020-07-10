@@ -1,0 +1,28 @@
+section.registration.body__section#register
+    h2.registration__title Записаться на курс
+    section
+        h4.registration__title--small Частное лицо
+        form.form(action="" method="POST")
+            label.form__label-checkbox.form__label
+                input(type="checkbox")
+                | У меня есть промокод
+            fieldset
+                label.form__label-text(for="promocode") Вот он:
+                input#promocode(type="text")
+            fieldset.form__card
+                label.form__label-text.form__card-label(for="card") Номер моей карты:
+                input.form__card-input#card(required type="text" maxlength="18")
+            fieldset
+                label.form__label-text(for="tel") Мой номер телефона:
+                input#tel(placeholder="+79015551274" required type="tel")
+            button Оплатить
+    section
+        h4 От компании
+        p Мы работаем по&thinsp;
+            a(href="#") договору оферты.
+        | Перед подписанием договора, внимательно ознакомьтесь с его содержанием.
+        p Чтобы получить счет на оплату:
+        ul
+            li Отправьте на почту заполненное и подписанное заявление
+            li Реквизиты
+            li Ссылку на профиль вашего студента на нашем сайте
