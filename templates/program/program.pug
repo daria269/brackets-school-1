@@ -6,7 +6,7 @@ if (program_items.length > 0)
             each panel, i in program_items
                 dt#introduction
                     button.accordion__trigger(aria-expanded=(i == 0 ? "true" : "false")  aria-controls="tab" + (i+1)) #{i+1 + "." + " " + panel.title}
-                    dd(class="accordion__panel" id="tab" + (i+1))
+                    dd(class="accordion__panel" id="tab" + (i+1) hidden=(i == 0 ? false : true))
                         p
                             em #{panel.duration}
                         p.program__desc #{panel.description}
