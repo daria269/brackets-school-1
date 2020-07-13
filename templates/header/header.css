@@ -101,11 +101,13 @@
 
 .nav__btn {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: -54px;
     right: 20px;
     width: 30px;
-    height: 20px;
-    display: block;
+    height: 30px;
     border: none;
     background: none;
     padding: 0;
