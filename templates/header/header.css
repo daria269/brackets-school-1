@@ -38,6 +38,12 @@
     position: relative;
 }
 
+@media(min-width: 1000px) {
+    .nav {
+        height: 100%;
+    }
+}
+
 .nav--active {
     height: 100%;
 }
@@ -80,6 +86,7 @@
 
 @media(min-width: 1000px) {
     .nav__list {
+        display: grid;
         row-gap: 0;
         padding: 0;
         grid-auto-flow: column;
@@ -111,17 +118,17 @@
 }
 
 .menu-btn__burger {
-    display: block
+    display: none;
 }
 
 .menu-btn__cross {
-    display: none;
+    display: block;
 }
 
 .nav__btn[aria-expanded=""] .menu-btn__burger {
-    display: none;
+    display: block;
 }
 
 .nav__btn[aria-expanded=""] .menu-btn__cross {
-    display: block;
+    display: none;
 }
