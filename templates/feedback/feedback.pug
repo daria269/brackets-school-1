@@ -1,17 +1,18 @@
-if (feedback_items.length > 0)
-    section.body__section.body__section--feedback#feedback
-        h3 Отзывы выпускников
-        each article in feedback_items
-            article.feedback-card.feedback-card--active
-                blockquote.feedback-card__blockquote #{article.text}
-                p #{article.author.name},
-                    br
-                    | #{article.author.description}
-        div.users-switch
-            span.users-switch__triangle
-            button.users-switch__btn.users-switch__btn--active(type="button")
-                img.avatar.avatar-active(src="img/avatar-1.jpg" alt="Выпускник первого потока Коля" width="46" height="46")
-            button.users-switch__btn(type="button")
-                img.avatar(src="img/avatar-2.jpg" alt="Выпускник первого потока Толя" width="46" height="46")
-            button.users-switch__btn(type="button")
-                img.avatar(src="img/avatar-3.jpg" alt="Выпускник первого потока Анна" width="46" height="46")
+if (feedback_items != undefined)
+    if (feedback_items.length > 0)
+        section.body__section.body__section--feedback#feedback
+            h3 Отзывы выпускников
+            each article in feedback_items
+                article.feedback-card.feedback-card--active
+                    blockquote.feedback-card__blockquote #{article.text}
+                    p #{article.author.name},
+                        br
+                        | #{article.author.description}
+            div.users-switch
+                span.users-switch__triangle
+                button.users-switch__btn.users-switch__btn--active(type="button")
+                    img.avatar.avatar-active(src="img/avatar-1.jpg" alt="Выпускник первого потока Коля" width="46" height="46")
+                button.users-switch__btn(type="button")
+                    img.avatar(src="img/avatar-2.jpg" alt="Выпускник первого потока Толя" width="46" height="46")
+                button.users-switch__btn(type="button")
+                    img.avatar(src="img/avatar-3.jpg" alt="Выпускник первого потока Анна" width="46" height="46")
