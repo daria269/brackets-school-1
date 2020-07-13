@@ -9,6 +9,5 @@ if (project_items != undefined)
                         use(xlink:href="#bracket")
                     p.card__desc #{article.description}
             div.toggle
-                button.toggle__item.toggle__item--active
-                button.toggle__item
-                button.toggle__item
+                each button, i in project_items
+                    button(class="toggle__item" class=(i == 0 ? "toggle__item--active" : ""))

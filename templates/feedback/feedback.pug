@@ -10,9 +10,6 @@ if (feedback_items != undefined)
                         | #{article.author.description}
             div.users-switch
                 span.users-switch__triangle
-                button.users-switch__btn.users-switch__btn--active(type="button")
-                    img.avatar.avatar-active(src="img/avatar-1.jpg" alt="Выпускник первого потока Коля" width="46" height="46")
-                button.users-switch__btn(type="button")
-                    img.avatar(src="img/avatar-2.jpg" alt="Выпускник первого потока Толя" width="46" height="46")
-                button.users-switch__btn(type="button")
-                    img.avatar(src="img/avatar-3.jpg" alt="Выпускник первого потока Анна" width="46" height="46")
+                each element, i in feedback_items
+                    button(class="users-switch__btn" class=(i == 0 ? "users-switch__btn--active" : "") type="button")
+                        img.avatar.avatar-active(src=("img/avatar-" + (i+1) + ".jpg") alt=(element.author.description + " " + element.author.name) width="46" height="46")
