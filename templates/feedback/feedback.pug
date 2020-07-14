@@ -12,4 +12,4 @@ if (feedback_items != undefined)
                 span.users-switch__triangle
                 each element, i in feedback_items
                     button(class="users-switch__btn" class=(i == 0 ? "users-switch__btn--active" : "") type="button")
-                        img.avatar.avatar-active(src=("img/avatar-" + (i+1) + ".jpg") alt=(element.author.description + " " + element.author.name) width="46" height="46")
+                        img.avatar.avatar-active(src=("../../img/" + element.author.avatar) alt=(element.author.description + " " + element.author.name) width="46" height="46")
