@@ -63,7 +63,6 @@
     ],
     "project_items": [
         {
-            "id": "burgyndiya",
             "title": "Новостной сайт «Бургундия»",
             "description": "Небольшой новостной проект. В этом проекте вы поработаете с базами данных, сделаете роутинг, серверный рендеринг и напишете API для общения с клиентом",
             "background": {
@@ -72,10 +71,10 @@
                 "color_start": "#711F1F 0%",
                 "color_end": "#B74343 100%"
             },
-            "icon": "microphone.png"
+            "icon": "microphone.png",
+            "bracket_color": "#953232"
         },
         {
-            "id": "texas-holdem",
             "title": "Техасский холдем онлайн",
             "description": "Онлайн-казино, в котором играют в техасский холдем. Вы сделаете процессинг платежей, опишете поведение искуственного интеллекта, играющего в покер и мультиплеер",
             "background": {
@@ -84,10 +83,10 @@
                 "color_start": "#219653 0%",
                 "color_end": "#27AE60 96.09%"
             },
-            "icon": "joker.png"
+            "icon": "joker.png",
+            "bracket_color": "#42B773"
         },
         {
-            "id": "pluto-map",
             "title": "Интерактивная карта Плутона",
             "description": "Онлайн-карта. На фронте используется Google Maps, но вам предстоит сгенерировать картинки поверхности всей планеты и придумать как передавать их на клиент",
             "background": {
@@ -96,7 +95,8 @@
                 "color_start": "#4F4F4F 0%",
                 "color_end": "#F2994A 100%"
             },
-            "icon": "telescope.png"
+            "icon": "telescope.png",
+            "bracket_color": "#9A704C"
         }
     ],
     "feedback_items": [

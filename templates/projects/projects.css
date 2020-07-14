@@ -20,18 +20,6 @@
     }
 }
 
-.card--burgyndiya {
-    fill: #953232;
-}
-
-.card--texas-holdem {
-    fill: #42B773;
-}
-
-.card--pluto-map {
-    fill: #9A704C;
-}
-
 .card--active {
     display: grid;
 }
