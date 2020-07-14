@@ -1,4 +1,4 @@
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .feedback {
         margin-bottom: 175px;
     }
@@ -11,7 +11,7 @@
     padding: 30px 60px 20px 60px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .feedback-card {
         padding: 40px 0 25px 0;
         grid-template-columns: 625px;
@@ -24,7 +24,7 @@
     display: block;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .feedback-card--active {
         display: grid;
     }
@@ -35,7 +35,7 @@
     position: relative;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .feedback-card__blockquote {
         font-size: 24px;
         margin: 0;
@@ -53,7 +53,7 @@
     transform: rotate(180deg);
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .feedback-card__blockquote::before {
         top: -4px;
         left: -50px;

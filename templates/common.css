@@ -23,7 +23,7 @@ body {
     margin: 0;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     body {
         font-size: 18px;
         line-height: 1.2;
@@ -36,18 +36,16 @@ fieldset {
     border: none;
 }
 
-*,
-::after,
-::before {
+*, ::after, ::before {
     box-sizing: border-box;
 }
 
 a:link {
-    color: #2D9CDB;
+    color: #2d9cdb;
 }
 
 a:link:hover {
-    color: #56CCF2;
+    color: #56ccf2;
 }
 
 button {
@@ -59,7 +57,7 @@ button {
     padding: 10px 30px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     button {
         font-size: 24px;
         padding: 10px 17px;
@@ -74,7 +72,7 @@ ul, ol {
     list-style: none;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     ul, ol {
         margin-bottom: 0;
     }
@@ -98,7 +96,7 @@ p {
     margin: 0 0 10px 0;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     p {
         margin-bottom: 15px;
     }
@@ -111,7 +109,7 @@ h2, h3, h4 {
     line-height: 1.2;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     h2, h3, h4 {
         margin: 0 0 20px 0;
     }
@@ -121,7 +119,7 @@ h2 {
     font-size: 30px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     h2 {
         font-size: 36px;
     }
@@ -132,7 +130,7 @@ h3 {
     margin-left: 20px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     h3 {
         font-size: 36px;
         margin-left: 60px;
@@ -144,7 +142,7 @@ h4 {
     color: #333333;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     h4 {
         font-size: 24px;
     }
@@ -160,7 +158,7 @@ input[type="text"], input[type="tel"] {
     color: #000000;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     input[type="text"], input[type="tel"] {
         font-size: 24px;
     }
@@ -189,7 +187,8 @@ dt {
     font-size: 24px;
     line-height: 1.2;
 }
-@media(min-width: 1000px) {
+
+@media (min-width: 1000px) {
     dt {
         font-size: 36px;
     }
@@ -199,7 +198,7 @@ input[type="checkbox"] {
     margin: 0 5px 0 0;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     input[type="checkbox"] {
         height: 21px;
         width: 21px;
@@ -211,7 +210,7 @@ input[type="checkbox"] {
     margin-bottom: 30px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .body__section {
         margin-bottom: 40px;
     }
@@ -221,7 +220,7 @@ input[type="checkbox"] {
     margin-bottom: 60px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .body__section--feedback {
         margin-bottom: 80px;
     }

@@ -9,7 +9,7 @@
     column-gap: 5px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .card {
         padding: 40px 0;
         grid-template-columns: 520px min-content;
@@ -32,7 +32,7 @@
     height: 156px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .card__bracket {
         position: static;
         width: 10px;
@@ -52,7 +52,7 @@
     margin: 0;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .card__title {
         font-size: 36px;
         margin-bottom: 0;
@@ -64,7 +64,7 @@
     width: 70px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .card__icon {
         height: 135px;
         width: 135px;
@@ -81,7 +81,7 @@
     grid-column: 1 / -1;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .card__desc {
         font-size: 24px;
         grid-column: 1 / 1;
@@ -98,7 +98,7 @@
     padding-top: 10px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .toggle {
         padding-top: 20px;
     }
