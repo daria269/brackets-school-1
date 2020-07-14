@@ -44,7 +44,7 @@
 
 .feedback-card__blockquote::before {
     content: "";
-    background: url("../img/bracket.svg") repeat;
+    background: url("../../img/bracket.svg") repeat;
     width: 40px;
     height: 35px;
     position: absolute;
@@ -62,7 +62,7 @@
 
 .feedback-card__blockquote::after {
     content: "";
-    background: url("../img/bracket.svg") repeat;
+    background: url("../../img/bracket.svg") repeat;
     width: 40px;
     height: 35px;
     position: absolute;

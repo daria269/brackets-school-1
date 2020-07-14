@@ -39,7 +39,7 @@
     }
 
     .form__card::after {
-        content: url("../img/mastercard.svg");
+        content: url("../../img/mastercard.svg");
         right: 20px;
         bottom: 37px;
         position: absolute;
