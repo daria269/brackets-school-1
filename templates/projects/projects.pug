@@ -2,12 +2,14 @@ if (project_items != undefined)
     if (project_items.length > 0)
         section.body__section#projects
             h3 Учебные проекты
-            each article in project_items
-                article.card.card--microphone.card--active
+            each article, i in project_items
+                article.card(class=(i == 0 ? "card--active" : "") style="background: radial-gradient(" + article.background.shape + " at " + article.background.position + ", " + article.background.color_start + ", " + article.background.color_end + ")")
+                    img.card__icon(src="../../img/" + article.icon)
                     h4.card__title #{article.title}
-                    svg.card__bracket
+                    svg.card__bracket(style="fill: " + article.bracket_color)
                         use(xlink:href="#bracket")
                     p.card__desc #{article.description}
-            div.toggle
-                each button, i in project_items
-                    button(class="toggle__item" class=(i == 0 ? "toggle__item--active" : ""))
+            if (project_items.length > 1)
+                div.toggle
+                    each button, i in project_items
+                        button(class="toggle__item" class=(i == 0 ? "toggle__item--active" : ""))

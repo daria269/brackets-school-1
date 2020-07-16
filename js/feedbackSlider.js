@@ -6,10 +6,9 @@ const defaultSlideNumber = 1;
 //слайдер для отзывов
 function showFeedbackSlide (number) {
     const slides = document.querySelectorAll('.feedback-card');
-    const triangle = document.querySelector('.users-switch__triangle');
     const defaultTriangleMovementVal = 65;
 
-    triangle.style.left = defaultTriangleMovementVal * number + 'px';
+    document.querySelector('.users-switch__triangle').style.left = defaultTriangleMovementVal * number + 'px';
 
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove('feedback-card--active');
