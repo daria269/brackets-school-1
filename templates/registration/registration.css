@@ -4,7 +4,7 @@
     row-gap: 20px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .registration {
         padding: 0 60px;
         margin-bottom: 30px;
@@ -30,7 +30,7 @@
     align-items: center;
 }
 
-@media(min-width:1000px) {
+@media (min-width:1000px) {
     .form__card {
         background: #c4c4c4;
         border-radius: 15px;
@@ -39,7 +39,7 @@
     }
 
     .form__card::after {
-        content: url("../img/mastercard.svg");
+        content: url("../../img/mastercard.svg");
         right: 20px;
         bottom: 37px;
         position: absolute;
@@ -65,7 +65,7 @@
     margin-bottom: 20px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .registration__title {
         grid-column: 1/-1;
     }

@@ -1,21 +1,15 @@
-section.body__section#projects
-    h3 Учебные проекты
-    article.card.card--microphone.card--active
-        h4.card__title Новостной сайт «Бургундия»
-        svg.card__bracket
-            use(xlink:href="#bracket")
-        p.card__desc Небольшой новостной проект. В этом проекте вы поработаете с базами данных, сделаете роутинг, серверный рендеринг и напишете API для общения с клиентом
-    article.card.card--joker
-        h4.card__title Техасский холдем онлайн
-        svg.card__bracket
-            use(xlink:href="#bracket")
-        p.card__desc Онлайн-казино, в котором играют в техасский холдем. Вы сделаете процессинг платежей, опишете поведение искуственного интеллекта, играющего в покер и мультиплеер
-    article.card.card--telescope
-        h4.card__title Интерактивная карта Плутона
-        svg.card__bracket
-            use(xlink:href="#bracket")
-        p.card__desc Онлайн-карта. На фронте используется Google Maps, но вам предстоит сгенерировать картинки поверхности всей планеты и придумать как передавать их на клиент
-    div.toggle
-        button.toggle__item.toggle__item--active
-        button.toggle__item
-        button.toggle__item
+if (project_items != undefined)
+    if (project_items.length > 0)
+        section.body__section#projects
+            h3 Учебные проекты
+            each article, i in project_items
+                article.card(class=(i == 0 ? "card--active" : "") style="background: radial-gradient(" + article.background.shape + " at " + article.background.position + ", " + article.background.color_start + ", " + article.background.color_end + ")")
+                    img.card__icon(src="../../img/" + article.icon)
+                    h4.card__title #{article.title}
+                    svg.card__bracket(style="fill: " + article.bracket_color)
+                        use(xlink:href="#bracket")
+                    p.card__desc #{article.description}
+            if (project_items.length > 1)
+                div.toggle
+                    each button, i in project_items
+                        button(class="toggle__item" class=(i == 0 ? "toggle__item--active" : ""))

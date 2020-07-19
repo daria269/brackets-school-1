@@ -12,7 +12,7 @@
     display: grid;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .footer__text {
         grid-auto-flow: column;
         column-gap: 0.4em;

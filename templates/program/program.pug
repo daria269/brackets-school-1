@@ -1,35 +1,23 @@
-section.program.body__section#program
-    h2 Программа курса
-    p Длительность курса — 9 недель
-    dl.accordion
-        dt#introduction
-            button.accordion__trigger(aria-expanded="true" aria-controls="tab1") 1. Введение в LISP
-            dd.accordion__panel#tab1
-                p
-                    em одна неделя
-                p.program__desc В этом разделе мы знакомимся с языком LISP: изучаем основные операторы языка, учимся работать с переменными, объявлять функции, настраивать рабочее окружение и компилировать программы на LISP
-                article.program-info
-                    h4.program-info__title Теория
-                    ul
-                        li Введение
-                        li Компилятор
-                        li Переменные
-                        li Динамическая типизация
-                        li Функции
-                        li Рекурсия
-                        li Рекурсия
-                article.program-info
-                    h4.program-info__title Практика
-                    ul
-                        li Настройка рабочего окружения
-                        li Установка компилятора
-                        li Написание первой программы
-                        li Отладка
-        dt#ideal-lisp
-            button.accordion__trigger(aria-expanded="false" aria-controls="tab2") 2. Идеальный LISP
-            dd.accordion__panel#tab2(hidden="true")
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt.
-                dt#traditional-programming
-                    button.accordion__trigger(aria-expanded="false" aria-controls="tab3") 3. Традиционное программирование
-            dd.accordion__panel#tab3(hidden="true")
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, architecto tenetur. Commodi, numquam incidunt non totam doloribus eos sequi minima cum hic earum modi ex amet sed ducimus tenetur odio velit cumque unde.
+if (program_items != undefined)
+    if (program_items.length > 0)
+        section.program.body__section#program
+            h2 Программа курса
+            p Длительность курса — 9 недель
+            dl.accordion
+                each panel, i in program_items
+                    dt#introduction
+                        button.accordion__trigger(aria-expanded=(i == 0 ? "true" : "false")  aria-controls="tab" + (i+1)) #{i+1 + "." + " " + panel.title}
+                        dd(class="accordion__panel" id="tab" + (i+1) hidden=(i == 0 ? "false" : "true"))
+                            p
+                                em #{panel.duration}
+                            p.program__desc #{panel.description}
+                            article.program-info
+                                h4.program-info__title Теория
+                                ul
+                                    each item in panel.theory_items
+                                        li #{item}
+                            article.program-info
+                                h4.program-info__title Практика
+                                ul
+                                    each item in panel.practice_items
+                                        li #{item}

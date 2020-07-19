@@ -6,7 +6,7 @@
     margin: 20px 0 20px 20px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .header__logo {
         margin: 0;
     }
@@ -23,7 +23,7 @@
     z-index: 10;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .header {
         display: flex;
         justify-content: space-between;
@@ -36,6 +36,12 @@
     height: 0;
     font-size: 18px;
     position: relative;
+}
+
+@media (min-width: 1000px) {
+    .nav {
+        height: 100%;
+    }
 }
 
 .nav--active {
@@ -54,7 +60,7 @@
     background: linear-gradient(180deg, #56CCF2 0%, rgba(86, 204, 242, 0.5) 100%);
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .nav--active {
         background: none;
     }
@@ -78,8 +84,9 @@
     display: grid;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .nav__list {
+        display: grid;
         row-gap: 0;
         padding: 0;
         grid-auto-flow: column;
@@ -94,34 +101,36 @@
 
 .nav__btn {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: -54px;
     right: 20px;
     width: 30px;
-    height: 20px;
-    display: block;
+    height: 30px;
     border: none;
     background: none;
     padding: 0;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .nav__btn {
         display: none;
     }
 }
 
 .menu-btn__burger {
-    display: block
+    display: none;
 }
 
 .menu-btn__cross {
-    display: none;
+    display: block;
 }
 
 .nav__btn[aria-expanded=""] .menu-btn__burger {
-    display: none;
+    display: block;
 }
 
 .nav__btn[aria-expanded=""] .menu-btn__cross {
-    display: block;
+    display: none;
 }

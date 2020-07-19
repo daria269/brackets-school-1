@@ -3,30 +3,21 @@
     position: relative;
     overflow-y: hidden;
     display: none;
+    grid-template-rows: 70px max-content;
+    grid-template-columns: min-content 1fr;
+    row-gap: 15px;
+    column-gap: 5px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .card {
         padding: 40px 0;
-        grid-template-columns: 625px min-content;
+        grid-template-columns: 520px min-content;
+        grid-template-rows: min-content max-content;
         justify-content: center;
         display: none;
+        column-gap: 0;
     }
-}
-
-.card--microphone {
-    background: radial-gradient(68.33% 282.68% at 0% 100%, #711F1F 0%, #B74343 100%);
-    fill: #953232;
-}
-
-.card--joker {
-    background: radial-gradient(112.82% 100% at 46.94% 0%, #219653 0%, #27AE60 96.09%);
-    fill: #42B773;
-}
-
-.card--telescope {
-    background: radial-gradient(112.82% 206.84% at 50% 100%, #4F4F4F 0%, #F2994A 100%);
-    fill: #9A704C;
 }
 
 .card--active {
@@ -41,12 +32,14 @@
     height: 156px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .card__bracket {
         position: static;
         width: 10px;
         height: 37px;
         align-self: center;
+        grid-column: -1 / -1;
+        justify-self: end;
     }
 }
 
@@ -55,64 +48,28 @@
     color: #F2F2F2;
     position: relative;
     z-index: 1;
-    margin-bottom: 15px;
-    padding-left: 60px;
-    min-height: 70px;
-    display: flex;
-    align-items: center;
+    align-self: center;
+    margin: 0;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .card__title {
         font-size: 36px;
-        padding-left: 0;
-        min-height: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0;
     }
 }
 
-.card__title::before {
-    content: "";
-    background: url('../../img/microphone.png') no-repeat;
-    background-size: cover;
-    position: absolute;
+.card__icon {
     height: 70px;
     width: 70px;
-    top: 0;
-    left: -12px;
 }
 
-@media(min-width: 1000px) {
-    .card__title::before {
+@media (min-width: 1000px) {
+    .card__icon {
         height: 135px;
         width: 135px;
-        top: 60px;
-        right: -30px;
-        left: unset;
-    }
-}
-
-.card--joker h4::before {
-    background: url('../../img/joker.png') no-repeat;
-    background-size: cover;
-}
-
-.card--telescope h4::before {
-    background: url('../../img/telescope.png') no-repeat;
-    background-size: cover;
-    height: 60px;
-    width: 60px;
-    left: -2px;
-    top: 5px;
-}
-
-@media(min-width: 1000px) {
-    .card--telescope h4::before {
-        height: 105px;
-        width: 105px;
-        top: 60px;
-        right: -10px;
-        left: unset;
+        grid-column: -1;
+        grid-row: 2;
     }
 }
 
@@ -121,12 +78,14 @@
     margin: 0;
     color: #F2F2F2;
     z-index: 1;
+    grid-column: 1 / -1;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .card__desc {
         font-size: 24px;
-        padding-right: 110px;
+        grid-column: 1 / 1;
+        padding-right: 10px;
     }
 }
 
@@ -139,7 +98,7 @@
     padding-top: 10px;
 }
 
-@media(min-width: 1000px) {
+@media (min-width: 1000px) {
     .toggle {
         padding-top: 20px;
     }

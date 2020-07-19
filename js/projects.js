@@ -19,5 +19,3 @@ for(let i = 0; i < projectsToggles.length; i++) {
         showSlides(i + 1);
     })
 }
-
-showSlides(defaultSlideNumber);
