@@ -1,2 +1,5 @@
-# Сайт школы программирования на LISP Brackets School
-Учебный проект на буткепме OneBootcamp
+# Brackets School
+
+
+Сайт школы программирования Brackets School
+Учебный проект на буткепме OneBootcamp.
